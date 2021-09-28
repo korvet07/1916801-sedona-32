@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="#">
 </head>
 
 <body>
     <header class="page-header">
-        <div class="container-header">
+        <div class="container">
             <nav class="navigation">
                 <div class="logo">
                     <img src="#" alt="Герб Седоны">
                 </div>
                 <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">О Седоне</a></li>
                     <li class="nav-item"><a class="nav-link" href="catalog.html">Гостинницы</a></li>
                 </ul>
@@ -27,7 +27,7 @@
                         <a class="nav-link" href="#" aria-label="Избранное"><img class="icon" src="#" alt="Избранное"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Хочу сюда</a>
+                        <a class="nav-link button" href="#">Хочу сюда</a>
                     </li>
                 </ul>
             </nav>
@@ -99,7 +99,7 @@
             <div class="container">
                 <h2 class="make-order-title">Заинтересовались?</h2>
                 <p class="make-order-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <a class="make-order-link" href="#">Поиск гостиниц в Седоне</a>
+                <a class="make-order-link button" href="#">Поиск гостиниц в Седоне</a>
             </div>
         </section>
         <section class="newsletter">
@@ -107,11 +107,13 @@
                 <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
                 <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                    <p class="newsletter-email">
-                        <label class="visually-hidden" for="newsletter-email">Email</label>
-                        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+                    <div>
+                        <p class="newsletter-email">
+                            <label class="visually-hidden" for="newsletter-email">Email</label>
+                            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+                        </p>
                         <button class="button newsletter-button" type="submit">Подписаться</button>
-                    </p>
+                    </div>
                 </form>
             </div>
         </section>
