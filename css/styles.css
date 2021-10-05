@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -42,6 +42,7 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .make-order-link.button {
@@ -53,12 +54,13 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
-.button.newsletter-button,
+.newsletter-button,
 .pagination-show-more,
 .pagination-link {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     color: #FFFFFF;
     background-color: #83B3D3;
     font-size: 20px;
@@ -66,6 +68,8 @@ body {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
 }
 
 .pagination-link.pagination-current {
@@ -75,7 +79,7 @@ body {
 
 .catalog-filter-button,
 .hotel-card-button {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     color: #FFFFFF;
     background-color: #83B3D3;
     font-size: 16px;
@@ -83,16 +87,20 @@ body {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
 }
 
 .button[type="reset"] {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     color: #FFFFFF;
-    background-color: #83B3D3;
+    background-color: transparent;
     font-size: 18px;
     line-height: 23px;
     text-align: center;
     border: 0;
+    cursor: pointer;
 }
 
 .welcome {
@@ -190,9 +198,8 @@ h2.advantages-title,
     line-height: 21px;
 }
 
-.breadcrumbs-item:first-child {
+.breadcrumbs-item.icon {
     background-image: url("../img/icon-breadcrumbs-home.svg");
-    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -263,3 +270,8 @@ h2.advantages-title,
 .hotel-card {
     background-color: #E5E5E5;
 }
+
+
+/* ul {
+    list-style-type: none;
+} */
