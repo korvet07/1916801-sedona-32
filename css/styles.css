@@ -22,6 +22,14 @@ body {
     background-color: #FFFFFF;
 }
 
+button {
+    font-family: inherit
+}
+
+a {
+    font-family: inherit
+}
+
 .nav-link {
     color: #000000;
     font-size: 20px;
@@ -32,8 +40,7 @@ body {
     text-transform: capitalize;
 }
 
-.nav-link.button,
-.hotel-card-link {
+.kind-button {
     color: #FFFFFF;
     background-color: #756257;
     font-size: 16px;
@@ -57,9 +64,7 @@ body {
     cursor: pointer;
 }
 
-.newsletter-button,
-.pagination-show-more,
-.pagination-link {
+.primary-button {
     font-family: "PT Sans", "Arial", sans-serif;
     color: #FFFFFF;
     background-color: #83B3D3;
@@ -75,10 +80,12 @@ body {
 .pagination-link.pagination-current {
     color: #000000;
     background-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
 }
 
-.catalog-filter-button,
-.hotel-card-button {
+.default-button {
     font-family: "PT Sans", "Arial", sans-serif;
     color: #FFFFFF;
     background-color: #83B3D3;
@@ -198,7 +205,7 @@ h2.advantages-title,
     line-height: 21px;
 }
 
-.breadcrumbs-item.icon {
+.icon-breadcrumbs {
     background-image: url("../img/icon-breadcrumbs-home.svg");
     background-repeat: no-repeat;
 }
