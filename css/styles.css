@@ -30,10 +30,6 @@ body {
     background-color: #FFFFFF;
 }
 
-.main-container {
-    flex-grow: 1;
-}
-
 button {
     font-family: inherit;
 }
@@ -147,7 +143,7 @@ h2.advantages-title,
 }
 
 .advantages-title,
-.title {
+.additional-title {
     color: #000000;
     font-size: 24px;
     line-height: 28px;
@@ -299,13 +295,6 @@ h2.advantages-title,
     background-color: #E5E5E5;
 }
 
-.navigation {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-
 .nav-list {
     width: 300px;
 }
@@ -314,9 +303,11 @@ h2.advantages-title,
     width: 260px;
 }
 
-.page-container {
+.container {
     width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .pic {
@@ -365,8 +356,8 @@ h2.advantages-title,
     margin-right: auto;
 }
 
-.make-order-description,
-.make-order-title {
+.description,
+.title {
     width: 720px;
     margin-left: auto;
     margin-right: auto;
@@ -385,9 +376,10 @@ h2.advantages-title,
     width: 200px;
 }
 
-.page-footer-container {
+.page-footer-container,
+.navigation {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
     justify-content: space-between;
+    padding-left: 72px;
+    padding-right: 72px;
 }
