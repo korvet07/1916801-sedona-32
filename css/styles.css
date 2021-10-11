@@ -41,6 +41,7 @@ a {
 ul {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .nav-link {
@@ -326,8 +327,10 @@ h2.advantages-title,
     width: 400px;
 }
 
-.advantages-list.landscape {
+.advantages-list.landscape,
+.catalog-filter-form {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .landscape-1 {
@@ -354,6 +357,7 @@ h2.advantages-title,
     width: 575px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 91px;
 }
 
 .description,
@@ -377,9 +381,56 @@ h2.advantages-title,
 }
 
 .page-footer-container,
-.navigation {
+.navigation,
+.hotel-card {
     display: flex;
     justify-content: space-between;
     padding-left: 72px;
     padding-right: 72px;
+}
+
+.inner-header-title {
+    display: inline;
+    width: 528px;
+    margin-left: 71px;
+}
+
+.breadcrumbs {
+    display: flex;
+    margin-left: 72px;
+}
+
+.filter-price {
+    width: 287px;
+}
+
+.filter-housing {
+    width: 125px;
+}
+
+.catalog-filter-list {
+    width: 150px;
+}
+
+.hotel-card-button,
+.hotel-card-link {
+    margin-top: auto;
+}
+
+.pagination-show-more {
+    display: block;
+    width: 625px;
+    margin-top: 31px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagination {
+    display: flex;
+    margin-top: 61px;
+}
+
+.pagination-item {
+    width: 55px;
+    margin-right: 7px;
 }
