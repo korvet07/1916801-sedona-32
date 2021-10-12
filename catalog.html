@@ -36,8 +36,8 @@
         </div>
     </header>
     <main class="main-inner">
-        <div class="container">
-            <header class="inner-header">
+        <header>
+            <div class="container inner-header">
                 <h1 class="inner-header-title">Гостинницы Седоны</h1>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item icon-breadcrumbs">
@@ -107,29 +107,34 @@
                         <button class="button" type="reset">Сбросить</button>
                     </form>
                 </section>
-            </header>
-        </div>
-        <section class="catalog-products">
+            </div>
+        </header>
+
+        <section class="catalog-hotels">
             <div class="container">
-                <form class="sorting-type">
-                    <label class="visually-hidden" for="sorting">Сортировка</label>
-                    <select class="select-control" id="sorting" name="sorting">
+                <div class="catalog-container">
+                    <h2 class="sorting-result">Найдено гостиниц: 38</h2>
+                    <form class="sorting-type">
+                        <label class="visually-hidden" for="sorting">Сортировка</label>
+                        <select class="select-control" id="sorting" name="sorting">
                         <option value="popular">Сначала популярные</option>
                         <option value="cheap" selected>Сначала дешёвые</option>
                         <option value="expensive">Сначала дорогие</option>
           				  </select>
-                    <button class="visually-hidden" type="submit">Отсортировать отели</button>
-                </form>
-                <a href="#" class="button">
-                    <span class="visually-hidden">Показать карточки</span>
-                </a>
-                <a href="#" class="button">
-                    <span class="visually-hidden">Показать карточку</span>
-                </a>
-                <a href="#" class="button">
-                    <span class="visually-hidden">Показать список</span>
-                </a>
-                <p class="sorting-result">Найдено гостиниц: 38</p>
+                        <button class="visually-hidden" type="submit">Отсортировать отели</button>
+                    </form>
+                    <div class="button-container">
+                        <a href="#" class="button">
+                            <span class="visually-hidden">Показать карточки</span>
+                        </a>
+                        <a href="#" class="button">
+                            <span class="visually-hidden">Показать карточку</span>
+                        </a>
+                        <a href="#" class="button">
+                            <span class="visually-hidden">Показать список</span>
+                        </a>
+                    </div>
+                </div>
                 <ul class="hotel-list">
                     <li class="hotel-card">
                         <img class="hotel-card-image" src="img/catalog/amara-resort-spa.jpg" alt="Amara Resort & Spa" width="180" height="120">
@@ -198,7 +203,7 @@
             </div>
         </section>
         <section class="newsletter">
-            <div class="container">
+            <div class="newsletter-container container">
                 <h2 class="newsletter-title inner">Подпишитесь на рассылку</h2>
                 <p class="newsletter-description inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -214,25 +219,23 @@
         </section>
     </main>
     <footer class="page-footer">
-        <div class="container">
-            <div class="page-footer-container">
-                <section class="footer-social">
-                    <h3 class="visually-hidden"> Мы в соцсетях</h3>
-                    <ul class="footer-social-list">
-                        <li class="footer-social-item">
-                            <a class="button" href="https://twitter.com/htmlacademy_ru" aria-label="Твиттер"><img src="img/twitter.svg" alt="Твиттер" width="18" height="15"></a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a class="button" href="https://www.facebook.com/htmlacademy" aria-label="Фейсбук"><img src="img/facebook.svg" alt="Фейсбук" width="10" height="18"></a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Ютуб"><img src="img/youtube.svg" alt="Ютуб" width="20" height="16"></a>
-                        </li>
-                    </ul>
-                </section>
-                <a class="footer-contact-tel" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
-                <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="img/logo-futer.svg" width="115" height="33" alt="HTMLAcademy"></a>
-            </div>
+        <div class="page-footer-container container">
+            <section class="footer-social">
+                <h3 class="visually-hidden"> Мы в соцсетях</h3>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a class="button" href="https://twitter.com/htmlacademy_ru" aria-label="Твиттер"><img src="img/twitter.svg" alt="Твиттер" width="18" height="15"></a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="button" href="https://www.facebook.com/htmlacademy" aria-label="Фейсбук"><img src="img/facebook.svg" alt="Фейсбук" width="10" height="18"></a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Ютуб"><img src="img/youtube.svg" alt="Ютуб" width="20" height="16"></a>
+                    </li>
+                </ul>
+            </section>
+            <a class="footer-contact-tel" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="img/logo-futer.svg" width="115" height="33" alt="HTMLAcademy"></a>
         </div>
     </footer>
 
