@@ -79,6 +79,7 @@ ul {
 }
 
 .primary-button {
+    min-width: 55px;
     font-family: "PT Sans", "Arial", sans-serif;
     color: #FFFFFF;
     background-color: #83B3D3;
@@ -299,6 +300,12 @@ h2.advantages-title,
     text-align: center;
 }
 
+.select-control {
+    width: 160px;
+    height: 50px;
+    align-self: center;
+}
+
 .hotel-card-title {
     color: #000000;
     font-size: 24px;
@@ -418,13 +425,15 @@ h2.advantages-title,
     width: 125px;
 }
 
-.catalog-filter-list {
-    width: 150px;
+.num-hotel {
+    width: 175px;
+    margin-left: auto;
+    margin-right: 51px;
+    align-self: center;
 }
 
-.hotel-card-button,
-.hotel-card-link {
-    margin-top: auto;
+.catalog-filter-list {
+    width: 150px;
 }
 
 .pagination-show-more {
