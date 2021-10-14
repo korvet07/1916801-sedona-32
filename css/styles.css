@@ -184,21 +184,29 @@ h2.advantages-title,
 
 .icon-hous {
     width: 75px;
+    height: 72px;
     background-image: url("../img/housing.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .icon-burger {
+    width: 64px;
+    height: 76px;
     background-image: url("../img/burger.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .icon-souvenir {
+    width: 64px;
+    height: 76px;
     background-image: url("../img/souvenirs.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .index-newsletter {
