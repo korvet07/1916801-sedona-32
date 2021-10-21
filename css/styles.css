@@ -459,7 +459,7 @@ header.inner {
   margin-bottom: 79px;
 }
 
-.advantages-additional.list+.advantages-list.landscape {
+.advantages-additional.list + .advantages-list.landscape {
   margin-bottom: 98px;
 }
 
