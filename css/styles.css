@@ -80,6 +80,7 @@ img {
 .kind-button {
   display: block;
   width: 160px;
+  height: 37px;
   color: #ffffff;
   background-color: #756257;
   font-size: 16px;
@@ -91,7 +92,8 @@ img {
   cursor: pointer;
   padding-top: 9px;
   padding-bottom: 10px;
-  margin-top: 14px;
+  box-sizing: border-box;
+
 }
 
 .make-order-link.button {
@@ -128,6 +130,10 @@ img {
 }
 
 .default-button {
+  display: block;
+  width: 160px;
+  height: 37px;
+  box-sizing: border-box;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   background-color: #83b3d3;
@@ -139,6 +145,8 @@ img {
   cursor: pointer;
   border: 0;
   text-decoration: none;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .added-button {
@@ -311,6 +319,11 @@ header.inner {
   line-height: 21px;
 }
 
+.hotel-rating {
+  margin-top: auto;
+  text-transform: uppercase;
+}
+
 .icon-breadcrumbs {
   margin-right: 30px;
 }
@@ -365,7 +378,9 @@ header.inner {
 }
 
 .newsletter-email {
-  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  box-sizing: border-box;
 }
 
 .main-inner {
@@ -393,8 +408,15 @@ header.inner {
   text-align: center;
 }
 
+.hotel-index,
+.hotel-card-price,
+.hotel-card-title {
+  align-self: start;
+  justify-self: start;
+}
+
 .select-control {
-  align-self: flex-end;
+  align-self: end;
 }
 
 .hotel-card-title {
@@ -402,12 +424,28 @@ header.inner {
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
+  grid-column: 1/-1;
+  align-self: end;
+  margin: 0;
 }
 
 .hotel-card {
+  display: flex;
   background-color: #e5e5e5;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding: 30px 72px;
+
+}
+
+.hotel-card-image {
+  padding-right: 36px;
+  object-fit: cover;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 8px;
+  margin-right: auto;
 }
 
 .nav-list {
@@ -434,8 +472,8 @@ header.inner {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .pic {
@@ -459,7 +497,7 @@ header.inner {
   margin-bottom: 79px;
 }
 
-.advantages-additional.list + .advantages-list.landscape {
+.advantages-additional.list+.advantages-list.landscape {
   margin-bottom: 98px;
 }
 
@@ -516,6 +554,8 @@ header.inner {
 }
 
 .field {
+  display: block;
+  box-sizing: border-box;
   width: 600px;
 }
 
@@ -527,6 +567,7 @@ header.inner {
 
 .newsletter-button {
   width: 200px;
+  height: 60px;
 }
 
 .page-footer-container,
@@ -542,7 +583,7 @@ header.inner {
 
 .catalog-container {
   display: flex;
-  padding: 61px 97px 89px;
+  padding: 61px 72px 89px;
 }
 
 .sorting-container {
@@ -611,7 +652,6 @@ header.inner {
 .button.pagination-show-more.primary-button {
   display: block;
   width: 625px;
-  margin-top: 31px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -634,7 +674,22 @@ header.inner {
   height: 55px;
 }
 
-.filter-button {
+.filter-button,
+.hotel-list {
   display: flex;
   flex-direction: column;
+}
+
+.hotel-list {
+  margin-bottom: 41px;
+}
+
+.hotel-card-button {
+  width: 160px;
+  align-self: end;
+}
+
+.hotel-card-link {
+  width: 151px;
+  align-self: end;
 }
