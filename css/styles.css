@@ -93,7 +93,6 @@ img {
   padding-top: 9px;
   padding-bottom: 10px;
   box-sizing: border-box;
-
 }
 
 .make-order-link.button {
@@ -412,7 +411,6 @@ header.inner {
 .hotel-index,
 .hotel-card-price,
 .hotel-card-title {
-  align-self: start;
   justify-self: start;
 }
 
@@ -434,7 +432,6 @@ header.inner {
   display: flex;
   background-color: #e5e5e5;
   padding: 30px 72px;
-
 }
 
 .hotel-card-image {
@@ -498,7 +495,7 @@ header.inner {
   margin-bottom: 79px;
 }
 
-.advantages-additional.list+.advantages-list.landscape {
+.advantages-additional.list + .advantages-list.landscape {
   margin-bottom: 98px;
 }
 
@@ -650,7 +647,6 @@ header.inner {
   width: 150px;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -699,7 +695,6 @@ header.inner {
 }
 
 .hotel-card-button {
-  width: 160px;
   align-self: end;
 }
 
@@ -721,13 +716,11 @@ header.inner {
 .star-item {
   width: 18px;
   height: 17px;
-  background-image: url(/img/star.svg);
+  background-image: url("../img/star.svg");
 }
 
 .star-list {
   display: flex;
-
-
 }
 
 .button-wrapper {
@@ -743,20 +736,16 @@ header.inner {
   height: 48px;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .button-slide {
-  background-image: url(/img/card-slide.svg);
-  grid-area: 1/2/2/3;
+  background-image: url("../img/card-slide.svg");
 }
 
 .button-list {
-  background-image: url(/img/card-list.svg);
-  grid-area: 1/3/2/4;
-
+  background-image: url("../img/card-list.svg");
 }
 
 .button-tile {
-  background-image: url(/img/card-tile.svg);
+  background-image: url("../img/card-tile.svg");
 }
