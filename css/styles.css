@@ -77,6 +77,10 @@ img {
   text-transform: capitalize;
 }
 
+.nav-item:last-child {
+  margin-top: 14px;
+}
+
 .kind-button {
   display: block;
   width: 160px;
@@ -94,6 +98,8 @@ img {
   padding-bottom: 10px;
   box-sizing: border-box;
 }
+
+
 
 .make-order-link.button {
   color: #ffffff;
@@ -355,14 +361,7 @@ header.inner {
 
 .newsletter-title.inner {
   color: #000000;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 35px;
-}
+ }
 
 .newsletter-description {
   color: #ffffff;
@@ -449,7 +448,6 @@ header.inner {
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  width: 310px;
   padding: 21px 55px;
 }
 
@@ -459,12 +457,8 @@ header.inner {
   padding-bottom: 14px;
 }
 
-.navigation-item {
+.navigation-item:not(:last-child) {
   margin-right: 33px;
-}
-
-.navigation-item:nth-child(3) {
-  margin-right: 0;
 }
 
 .container {
@@ -495,7 +489,7 @@ header.inner {
   margin-bottom: 79px;
 }
 
-.advantages-additional.list + .advantages-list.landscape {
+.advantages-additional.list+.advantages-list.landscape {
   margin-bottom: 98px;
 }
 
@@ -510,6 +504,8 @@ header.inner {
 }
 
 .catalog-filter-form {
+  font-size: 18px;
+  line-height: 23px;
   padding-bottom: 83px;
 }
 
@@ -524,7 +520,7 @@ header.inner {
 }
 
 .wrapper {
-  padding-top: 74px;
+  padding-top: 98px;
   width: 400px;
 }
 
@@ -641,6 +637,7 @@ header.inner {
   margin-left: auto;
   margin-right: 68px;
   align-self: flex-end;
+  line-height: 23px;
 }
 
 .catalog-filter-list {
@@ -710,6 +707,8 @@ header.inner {
 }
 
 .catalog-filter-button {
+  font-size: 16px;
+  line-height: 21px;
   margin-bottom: 20px;
 }
 
