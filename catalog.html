@@ -73,21 +73,27 @@
         <section class="catalog-filter">
           <h2 class="visually-hidden">Каталог гостиниц</h2>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Инфраструктура</legend>
+            <fieldset class="catalog-filter-group infrastructure-hotels">
+              <legend class="catalog-filter-title ">Инфраструктура</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control"><input class="control-input" type="checkbox" name="pool" checked>
+                  <label class="control control-chekbox"><input class="visually-hidden control-input" type="checkbox"
+                      name="pool" checked>
+                    <span class="control-mark"></span>
                     <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control"><input class="control-input" type="checkbox" name="parking" checked>
+                  <label class="control control-chekbox"><input class="visually-hidden control-input" type="checkbox"
+                      name="parking" checked>
+                    <span class="control-mark"></span>
                     <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control"><input class="control-input" type="checkbox" name="wi-fi">
+                  <label class="control control-chekbox"><input class="visually-hidden control-input" type="checkbox"
+                      name="wi-fi">
+                    <span class="control-mark"></span>
                     <span class="control-label">Wi-fi</span>
                   </label>
                 </li>
@@ -97,17 +103,20 @@
               <legend class="catalog-filter-title">Тип жилья</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control"><input class="control-input" type="radio" name="hotel" checked>
+                  <label class="control"><input class="visually-hidden control-input" type="radio" name="hotel" checked>
+                    <span class="control-mark"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control"><input class="control-input" type="radio" name="motel">
+                  <label class="control"><input class="visually-hidden control-input" type="radio" name="motel">
+                    <span class="control-mark"></span>
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control"><input class="control-input" type="radio" name="apartments">
+                  <label class="control"><input class="visually-hidden control-input" type="radio" name="apartments">
+                    <span class="control-mark"></span>
                     <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
@@ -115,18 +124,26 @@
             </fieldset>
             <fieldset class="catalog-filter-group filter-price">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <label class="catalog-filter-label">от <input class="catalog-filter-input" type="number" name="min-price"
-                  placeholder="0" min="0"> ₽
-              </label>
-              <label class="catalog-filter-label">до <input class="catalog-filter-input" type="number" name="max-price"
-                  placeholder="9000" max="9000"> ₽
-              </label>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
+              <div class="range">
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label value-min"><input class="range-input" type="number"
+                      name="min-price" placeholder="0" min="0">от
+                  </label>
+                  <label class="catalog-filter-label value-max"><input class="range-input" type="number"
+                      name="max-price" placeholder="9000" max="9000">до
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 227px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="filter-button">
               <button class="default-button catalog-filter-button" type="submit">Применить</button>
@@ -142,12 +159,14 @@
         <div class="sorting-container">
           <h2 class="sorting-result">Найдено гостиниц: 38</h2>
           <form class="sorting-type">
-            <label class="visually-hidden" for="sorting">Сортировка</label>
-            <select class="select-control" id="sorting" name="sorting">
-              <option value="popular">Сначала популярные</option>
-              <option value="cheap" selected>Сначала дешёвые</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
+            <div class="select">
+              <label class="visually-hidden" for="sorting">Сортировка</label>
+              <select class="select-control" id="sorting" name="sorting">
+                <option value="popular">Сначала популярные</option>
+                <option value="cheap" selected>Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+            </div>
             <button class="visually-hidden" type="submit">Отсортировать отели</button>
           </form>
           <div class="button-wrapper">
@@ -320,7 +339,7 @@
         </ul>
       </section>
       <a class="footer-contact-tel" href="tel:+7(812)812-12-12" tabindex="1">+7 (812)812-12-12</a>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/" tabindex="1">
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/" aria-label="Логотип HtmlAcademy" tabindex="1">
         <svg class="footer-logo" aria-hidden="true" focusable="false" width="115" height="33" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
