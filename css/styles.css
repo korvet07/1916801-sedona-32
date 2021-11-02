@@ -41,7 +41,6 @@ body {
   overflow: hidden;
 }
 
-
 .catalog-container .button {
   width: 48px;
   height: 48px;
@@ -76,7 +75,6 @@ img {
   padding: 6px 12px;
 }
 
-
 .nav-item:not(:last-child) {
   align-self: center;
 }
@@ -99,7 +97,6 @@ img {
 .catalog-hotel:hover {
   color: #756257;
 }
-
 
 .navigation-link:focus,
 .catalog-hotel:focus {
@@ -138,7 +135,6 @@ img {
   outline: none;
 }
 
-
 .search .nav-link-icon {
   padding: 10px;
   margin-top: 5px;
@@ -159,6 +155,10 @@ img {
 
 .nav-item:last-child {
   margin-top: 14px;
+}
+
+.nav-item {
+  position: relative;
 }
 
 .kind-button {
@@ -469,7 +469,6 @@ header.inner {
   visibility: hidden;
 }
 
-
 .breadcrumbs-link-home {
   display: inline-block;
   width: 28px;
@@ -506,7 +505,7 @@ header.inner {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .make-order-description {
@@ -582,10 +581,6 @@ header.inner {
   justify-self: start;
 }
 
-.select-control {
-  align-self: end;
-}
-
 .hotel-card-title {
   color: #000000;
   font-size: 24px;
@@ -638,6 +633,7 @@ header.inner {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
+  box-sizing: border-box;
 }
 
 .pic {
@@ -669,16 +665,16 @@ header.inner {
   margin-bottom: 168px;
 }
 
-.advantages-list.landscape,
-.catalog-filter-form {
+.advantages-list.landscape {
   display: flex;
   justify-content: space-evenly;
 }
 
 .catalog-filter-form {
+  display: flex;
   font-size: 18px;
   line-height: 23px;
-  padding-bottom: 83px;
+  padding: 0 31px 83px;
 }
 
 .landscape-1 {
@@ -714,12 +710,6 @@ header.inner {
   margin-right: auto;
 }
 
-.field {
-  display: block;
-  box-sizing: border-box;
-  width: 600px;
-}
-
 .newsletter-form {
   margin-left: auto;
   margin-right: auto;
@@ -727,9 +717,7 @@ header.inner {
 }
 
 .newsletter-button {
-  font-family: "PT Sans",
-    "Arial",
-    sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   background-color: #83b3d3;
   font-size: 20px;
@@ -778,7 +766,6 @@ header.inner {
   display: flex;
   margin-bottom: 50px;
 }
-
 
 .footer-social-list {
   width: 150px;
@@ -887,12 +874,15 @@ header.inner {
   align-items: start;
 }
 
-.filter-price {
-  width: 287px;
+.catalog-filter-group {
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-housing {
   width: 145px;
+  margin-right: 167px;
 }
 
 .num-hotel {
@@ -962,12 +952,6 @@ header.inner {
 .hotel-card-link {
   width: 151px;
   align-self: end;
-}
-
-.catalog-filter-group {
-  border: 0;
-  margin: 0;
-  padding: 0;
 }
 
 .catalog-filter-button {
@@ -1054,4 +1038,320 @@ header.inner {
 .catalog-hotel {
   display: inline-block;
   padding: 10px 16px;
+}
+
+.field {
+  font: inherit;
+  line-height: 26px;
+  display: block;
+  box-sizing: border-box;
+  width: 600px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  padding: 15px 22px;
+}
+
+.field:hover {
+  background-color: #e6e6e6;
+  outline: none;
+}
+
+.field:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.field:active {
+  background-color: #ffffff;
+  outline: 3px solid #000000;
+}
+
+.field:invalid {
+  outline: 2px solid #ff5757;
+}
+
+.field::placeholder,
+.field::placeholder:hover,
+.field::placeholder:focus,
+.field::placeholder:invalid {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83b3d3;
+}
+
+.range-toggle:active {
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83b3d3;
+}
+
+.toggle-min {
+  left: 0;
+  top: -8px;
+}
+
+.toggle-max {
+  right: -10px;
+  top: -8px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  height: 48px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+}
+
+.value-min {
+  outline: 2px solid #ffffff;
+  border-radius: 4px 0 0 4px;
+}
+
+.value-max {
+  outline: 2px solid #ffffff;
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  color: rgba(255, 255, 255, 0.3);
+  padding-right: 17px;
+  padding-left: 19px;
+}
+
+.range-input {
+  width: 40px;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 3px 2px;
+  appearance: textfield;
+  color: #ffffff;
+}
+
+.range-input::placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+
+.catalog-filter-label:hover {
+  outline: 2px solid #ffffff;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-filter-label:focus-within {
+  outline: 2px solid #ffffff;
+  box-shadow: 0 0 0 3px #81b3d2;
+}
+
+.catalog-filter-label:active {
+  background-color: #756257;
+}
+
+.range-input:focus {
+  outline: none;
+}
+
+.range {
+  width: 287px;
+}
+
+.filter-price {
+  width: 287px;
+  margin-right: auto;
+}
+
+.infrastructure-hotels {
+  margin-right: 67px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../img/cheked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="checkbox"] + .control-mark {
+  border-radius: 4px;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  background-image: url("../img/cheked-radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus-within .control-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.control-chekbox:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.select {
+  width: 287px;
+  display: flex;
+  align-items: center;
+}
+
+.select-control {
+  padding: 12px 19px;
+  padding-right: 123px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  background-image: url("../img/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 21px center;
+  appearance: none;
+  align-self: end;
+}
+
+.select-control:hover,
+.select-control:focus {
+  outline: 2px solid #83b3d3;
+}
+
+.popover {
+  position: absolute;
+  /* display: none; */
+}
+
+.popover-favorite {
+  width: 400px;
+  min-height: 200px;
+  z-index: 1;
+  right: -185px;
+  top: 55px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.photo-preview {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  grid-area: 1/1/3/2;
+  background-image: url("../img/catalog/villas-poco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popover-item:first-child > .photo-preview {
+  background-image: url("../img/catalog/desert-quail-inn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popover-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+
+.popover-item {
+  flex-basis: 100%;
+}
+
+.popover-item:not(:last-child) {
+  display: grid;
+  grid-template-columns: 50px 244px 20px;
+  grid-template-rows: 25px 25px;
+  column-gap: 20px;
+  margin-bottom: 25px;
+  padding-left: 25px;
+}
+
+.button-popover {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  padding: 0;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.delete {
+  width: 16px;
+  grid-row: 1 / span 2;
+  background-image: url("../img/icon-delete.svg");
+  background-repeat: no-repeat;
+  background-position: top 7px center;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.popover-card-title {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  grid-area: 1/2/2/3;
+  margin: 0;
+}
+
+.card-index {
+  grid-area: 2/2/3/3;
 }
