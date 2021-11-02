@@ -307,8 +307,7 @@ img {
 }
 
 .welcome-container {
-  box-sizing: border-box;
-  background-image: url("../img/index-background.jpg");
+  background-image: url("../img/welcome-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -636,10 +635,12 @@ header.inner {
   box-sizing: border-box;
 }
 
-.pic {
-  display: block;
+.welcome-logo {
+  min-height: 485px;
+  background-image: url("../img/welcome-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0 auto;
-  padding-top: 52px;
 }
 
 .advantages-additional.list,
@@ -1266,7 +1267,9 @@ header.inner {
   appearance: none;
   align-self: end;
 }
-
+.select-control[name="sorting-num"] {
+  padding-bottom: 0;
+}
 .select-control:hover,
 .select-control:focus {
   outline: 2px solid #83b3d3;
@@ -1274,7 +1277,7 @@ header.inner {
 
 .popover {
   position: absolute;
-  /* display: none; */
+  display: none;
 }
 
 .popover-favorite {
