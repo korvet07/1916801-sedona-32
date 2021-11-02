@@ -1055,16 +1055,16 @@ header.inner {
 .field:hover {
   background-color: #e6e6e6;
   outline: none;
-}
+  }
 
 .field:focus {
   background-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
+  outline: 2px solid #83b3d3;
 }
 
 .field:active {
   background-color: #ffffff;
-  outline: 3px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .field:invalid {
