@@ -231,7 +231,7 @@ img {
 
 .pagination-link.pagination-current {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2 ;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -312,10 +312,6 @@ img {
   background-repeat: no-repeat;
 }
 
-.welcome {
-  margin-bottom: 63px;
-}
-
 h2.advantages-title,
 .make-order-title {
   color: #000000;
@@ -361,6 +357,15 @@ h2.advantages-title,
 .landscape .advantages-title {
   color: #ffffff;
   background-color: #83b3d3;
+}
+
+.advantages-list > .advantages-item {
+  padding: 98px 75px 119px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list > .advantages-item:nth-child(2) {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-description {
@@ -441,6 +446,8 @@ header.inner {
 }
 
 .hotel-rating {
+  background-color: #f2f2f2;
+  padding: 10px 33px;
   margin-top: auto;
   text-transform: uppercase;
 }
@@ -512,7 +519,7 @@ header.inner {
   line-height: 26px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 70px;
+  margin-bottom: 73px;
 }
 
 .newsletter-title {
@@ -523,7 +530,7 @@ header.inner {
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 33px;
 }
 
 .newsletter-title.inner {
@@ -536,7 +543,7 @@ header.inner {
   line-height: 26px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 43px;
 }
 
 .newsletter-description.inner {
@@ -632,7 +639,6 @@ header.inner {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
-  box-sizing: border-box;
 }
 
 .welcome-logo {
@@ -654,16 +660,13 @@ header.inner {
   width: 400px;
 }
 
-.advantages-additional.list {
-  margin-bottom: 79px;
+.advantages-additional.item {
+  padding-bottom: 80px;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-additional.list + .advantages-list.landscape {
-  margin-bottom: 98px;
-}
-
-.advantages {
-  margin-bottom: 168px;
+.advantages-additional.item:nth-child(2) {
+  background-color: #ffffff;
 }
 
 .advantages-list.landscape {
@@ -694,6 +697,7 @@ header.inner {
 }
 
 .make-ordrer {
+  padding-top: 50px;
   margin-bottom: 91px;
 }
 
@@ -702,6 +706,10 @@ header.inner {
 .star-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.star-wrapper {
+  align-items: center;
 }
 
 .description,
@@ -714,7 +722,7 @@ header.inner {
 .newsletter-form {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 40px;
+  padding-bottom: 94px;
 }
 
 .newsletter-button {
@@ -1041,21 +1049,10 @@ header.inner {
   padding: 10px 16px;
 }
 
-.field {
-  font: inherit;
-  line-height: 26px;
-  display: block;
-  box-sizing: border-box;
-  width: 600px;
-  border-radius: 10px 0 0 10px;
-  border: none;
-  padding: 15px 22px;
-}
-
 .field:hover {
   background-color: #e6e6e6;
   outline: none;
-  }
+}
 
 .field:focus {
   background-color: #e6e6e6;
@@ -1078,6 +1075,17 @@ header.inner {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.field {
+  font: inherit;
+  line-height: 26px;
+  display: block;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  width: 600px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  padding: 15px 22px;
+}
 .range-scale {
   position: relative;
   height: 4px;
@@ -1267,9 +1275,11 @@ header.inner {
   appearance: none;
   align-self: end;
 }
+
 .select-control[name="sorting-num"] {
   padding-bottom: 0;
 }
+
 .select-control:hover,
 .select-control:focus {
   outline: 2px solid #83b3d3;
@@ -1288,7 +1298,7 @@ header.inner {
   top: 55px;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 }
 
@@ -1333,7 +1343,7 @@ header.inner {
   height: 60px;
   line-height: 60px;
   padding: 0;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0 0 20px 20px;
 }
 
 .delete {
