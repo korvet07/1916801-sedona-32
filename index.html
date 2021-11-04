@@ -226,7 +226,7 @@
             <div class="wrapper-date">
               <input class="field" id="date-arrival" type="text" name="date-arrival" placeholder="27 апреля 2020"
                 required>
-              <span class="note note-arrival">Мы не можем отправить вас в прошлое.</span>
+              <span class="note note-invalid">Мы не можем отправить вас в прошлое.</span>
             </div>
           </div>
           <div class="field-group group-date">
@@ -234,7 +234,7 @@
             <div class="wrapper-date">
               <input class="field" id="date-depart" type="text" name="date-depart" placeholder="1 сентября 2021"
                 required>
-              <span class="note note-arrival">На эти даты есть свободные номера. Пока есть.</span>
+              <span class="note note-valid">На эти даты есть свободные номера. Пока есть.</span>
             </div>
           </div>
           <div class="wrapper-quest">
@@ -244,7 +244,7 @@
             </p>
             <p class="field-group find-number-child">
               <span class=" form-label-icon">
-                <label class="form-label" for="number-child">Дети</label>
+                <label class="form-label" for="number-child">Дети:</label>
                 <button class="info" type="button">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
@@ -252,7 +252,7 @@
               <input id="number-child" class="field" type="text" name="number-child" placeholder="1">
             </p>
           </div>
-          <button type="submit">Найти</button>
+          <button class="button-search-submit" type="submit">Найти</button>
         </form>
       </section>
     </div>
