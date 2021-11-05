@@ -969,16 +969,19 @@ header.inner {
   margin-bottom: 20px;
 }
 
-.default-button.catalog-filter-button:hover {
+.default-button.catalog-filter-button:hover,
+.button-search-submit:hover {
   background-color: #68a2ca;
 }
 
-.default-button.catalog-filter-button:focus {
+.default-button.catalog-filter-button:focus,
+.button-search-submit:focus {
   background-color: #68a2ca;
   outline: 3px solid #ffffff;
 }
 
-.default-button.catalog-filter-button:active {
+.default-button.catalog-filter-button:active,
+.button-search-submit:active {
   background-color: #68a2ca;
   color: rgba(255, 255, 255, 0.3);
   outline: none;
@@ -1050,27 +1053,33 @@ header.inner {
 }
 
 .field:hover,
-.modal-close-button:hover {
+.modal-close-button:hover,
+.num-quest:hover {
   background-color: #e6e6e6;
   outline: none;
+  opacity: 1;
 }
 
 .field:focus,
-.modal-close-button:focus {
+.modal-close-button:focus,
+.num-quest:focus {
   background-color: #e6e6e6;
   outline: 2px solid #83b3d3;
+  opacity: 1;
 }
 
-.field:active
- {
+.field:active {
   background-color: #ffffff;
   outline: 2px solid #000000;
 }
-.modal-close-button:active{
-  background-color: #E6E6E6;
+
+.modal-close-button:active,
+.num-quest:active {
+  background-color: #e6e6e6;
   opacity: 0.3;
   outline: none;
 }
+
 /* .field:invalid {
   background-color: #ffffff;
   outline: 2px solid #ff5757;
@@ -1414,6 +1423,7 @@ header.inner {
   width: 100%;
   height: 100%;
 }
+
 .modal {
   position: relative;
   margin: auto;
@@ -1423,6 +1433,7 @@ header.inner {
   border: 1px solid black;
   background-color: #ffffff;
 }
+
 .modal-search-hotels {
   max-width: 715px;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
@@ -1443,6 +1454,7 @@ header.inner {
   border: none;
   cursor: pointer;
 }
+
 .modal-title {
   margin: 0;
   margin-bottom: 32px;
@@ -1451,27 +1463,36 @@ header.inner {
   line-height: 40px;
   text-transform: uppercase;
 }
+
 .note,
 .field-group {
   margin: 0;
 }
+
 .note {
   display: inline-block;
   font-size: 16px;
   margin-bottom: 11px;
 }
+
 .note-invalid {
   color: #ff5757;
 }
+
 .group-date .field {
   width: 420px;
   height: 50px;
   padding: 10px 250px 10px 19px;
   border-radius: 4px;
 }
+
 .button-search-submit {
   width: 575px;
   height: 60px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
   padding: 0;
   margin: 0;
   border: 0;
@@ -1479,28 +1500,35 @@ header.inner {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .find-number-quest .field,
 .find-number-child .field {
+  background-color: #f2f2f2;
   font-size: 18px;
   line-height: 40px;
   width: 133px;
   padding: 3px 49px;
   border-radius: 4px;
 }
+
 .find-number-quest {
   margin-right: 56px;
 }
-.info {
-  margin-right: 18px;
+.find-number-quest,
+.find-number-child {
+  position: relative;
 }
+
 .form-search {
   display: flex;
   flex-direction: column;
 }
+
 .wrapper-quest {
   display: flex;
   margin-bottom: 40px;
 }
+
 .field-group {
   display: flex;
 
@@ -1508,7 +1536,115 @@ header.inner {
   line-height: 40px;
   font-weight: 700;
 }
+
 .form-label {
   width: 155px;
   height: 50px;
+}
+.modal-container-close {
+  display: none;
+}
+.plus-child,
+.plus-quest {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 16px;
+  top: 12px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.minus-child,
+.minus-quest {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 110px;
+  top: 12px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+  background-image: url("../img/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.minus-quest {
+  left: 170px;
+}
+.wrapper-date {
+  position: relative;
+}
+.icon-calendar {
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  right: 19px;
+  top: 18px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+}
+.find-number-child .form-label {
+  position: relative;
+  margin-right: 50px;
+}
+.info {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  left: 53px;
+  top: 8px;
+  background-image: url("../img/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.info::after {
+  content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
+  position: absolute;
+  width: 256px;
+  height: 143px;
+  background-color: #333333;
+  padding: 15px 18px 18px 22px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  left: -120px;
+  top: 45px;
+  box-sizing: border-box;
+}
+.info::before {
+  content: url("../img/arrow-black.svg");
+  position: absolute;
+  width: 19px;
+  height: 9px;
+  top: 34px;
+  left: 3px;
 }
