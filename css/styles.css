@@ -43,7 +43,7 @@ body {
 
 .catalog-container .button {
   width: 48px;
-    height: 48px;
+  height: 48px;
 }
 
 a {
@@ -222,10 +222,12 @@ button {
   color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
-.wrapper-show-more{
+
+.wrapper-show-more {
   background-color: #ffffff;
   padding-top: 40px;
 }
+
 .primary-button {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
@@ -322,10 +324,12 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .advantages {
   padding-top: 63px;
   background-color: #ffffff;
 }
+
 h2.advantages-title,
 .make-order-title {
   color: #000000;
@@ -1324,6 +1328,9 @@ h2.advantages-title,
 .popover {
   position: absolute;
   min-height: 200px;
+}
+
+.popover-close-button {
   display: none;
 }
 
@@ -1348,7 +1355,7 @@ h2.advantages-title,
   position: absolute;
   width: 20px;
   height: 10px;
-  top: -18px;
+  top: -26px;
   left: 190px;
 }
 
@@ -1401,7 +1408,7 @@ h2.advantages-title,
 
 .delete {
   width: 16px;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   grid-row: 1 / span 2;
   background-image: url("../img/icon-delete.svg");
   background-repeat: no-repeat;
