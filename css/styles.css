@@ -43,7 +43,7 @@ body {
 
 .catalog-container .button {
   width: 48px;
-  height: 48px;
+    height: 48px;
 }
 
 a {
@@ -222,7 +222,10 @@ button {
   color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
-
+.wrapper-show-more{
+  background-color: #ffffff;
+  padding-top: 40px;
+}
 .primary-button {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
@@ -314,12 +317,15 @@ button {
 }
 
 .welcome {
-
+  background-color: #ffffff;
   background-image: url("../img/welcome-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.advantages {
+  padding-top: 63px;
+  background-color: #ffffff;
+}
 h2.advantages-title,
 .make-order-title {
   color: #000000;
@@ -424,10 +430,6 @@ h2.advantages-title,
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 94px;
-}
-
-header.inner {
-  margin-bottom: 50px;
 }
 
 .inner-header {
@@ -563,11 +565,6 @@ header.inner {
   display: grid;
   grid-template-columns: 1fr auto;
   box-sizing: border-box;
-
-}
-
-.main-inner {
-  margin-bottom: 123px;
 }
 
 .sorting-result {
@@ -649,7 +646,6 @@ header.inner {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
-
 }
 
 .welcome-logo {
@@ -657,8 +653,6 @@ header.inner {
   background-image: url("../img/welcome-logo.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 63px;
-
 }
 
 .advantages-additional.list,
@@ -708,20 +702,23 @@ header.inner {
   width: 400px;
 }
 
-.make-ordrer {
+.make-ordrer-container {
+  background-color: #ffffff;
   padding-top: 50px;
-  margin-bottom: 91px;
+  padding-bottom: 91px;
 }
 
 .make-ordrer-container,
 .newsletter-container,
 .star-wrapper {
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
 .star-wrapper {
   align-items: center;
+  background-color: #e5e5e5;
 }
 
 .description,
@@ -769,6 +766,7 @@ header.inner {
 
 .page-footer-container,
 .navigation {
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
 }
@@ -779,13 +777,16 @@ header.inner {
 }
 
 .catalog-container {
+  background-color: #ffffff;
   display: flex;
   padding: 61px 72px 89px;
 }
 
 .sorting-container {
+  background-color: #ffffff;
   display: flex;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer-social-list {
@@ -960,10 +961,6 @@ header.inner {
 .hotel-list {
   display: flex;
   flex-direction: column;
-}
-
-.hotel-list {
-  margin-bottom: 41px;
 }
 
 .hotel-card-button {
