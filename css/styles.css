@@ -63,6 +63,13 @@ img {
   height: auto;
 }
 
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+
 .navigation-link {
   display: block;
   color: #000000;
@@ -1430,13 +1437,14 @@ header.inner {
   margin-top: 396px;
   padding: 70px;
   padding-top: 62px;
-  border: 1px solid black;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
+  border-radius: 30px;
 }
 
 .modal-search-hotels {
   max-width: 715px;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
@@ -1514,6 +1522,7 @@ header.inner {
 .find-number-quest {
   margin-right: 56px;
 }
+
 .find-number-quest,
 .find-number-child {
   position: relative;
@@ -1541,53 +1550,49 @@ header.inner {
   width: 155px;
   height: 50px;
 }
+
 .modal-container-close {
   display: none;
 }
+
 .plus-child,
 .plus-quest {
-  content: "";
   position: absolute;
   display: block;
   right: 16px;
   top: 12px;
   width: 25px;
   height: 25px;
-  padding: 0;
-  border: 0;
-  margin: 0;
   background-color: #f2f2f2;
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
-  cursor: pointer;
 }
+
 .minus-child,
 .minus-quest {
-  content: "";
   position: absolute;
   display: block;
   left: 110px;
   top: 12px;
   width: 25px;
   height: 25px;
-  padding: 0;
-  border: 0;
-  margin: 0;
   background-color: #f2f2f2;
   background-image: url("../img/minus.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
-  cursor: pointer;
 }
+
 .minus-quest {
   left: 170px;
 }
+
 .wrapper-date {
   position: relative;
 }
+
 .icon-calendar {
   position: absolute;
   display: block;
@@ -1595,35 +1600,31 @@ header.inner {
   height: 15px;
   right: 19px;
   top: 18px;
-  padding: 0;
-  border: 0;
-  margin: 0;
   background-color: #f2f2f2;
   background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
 }
+
 .find-number-child .form-label {
   position: relative;
   margin-right: 50px;
 }
+
 .info {
   position: absolute;
   display: block;
   width: 25px;
   height: 25px;
-  padding: 0;
-  border: 0;
-  margin: 0;
   left: 53px;
   top: 8px;
   background-image: url("../img/info.svg");
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
   border-radius: 50%;
 }
+
 .info::after {
   content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
   position: absolute;
@@ -1634,12 +1635,13 @@ header.inner {
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   left: -120px;
   top: 45px;
   box-sizing: border-box;
 }
+
 .info::before {
   content: url("../img/arrow-black.svg");
   position: absolute;
