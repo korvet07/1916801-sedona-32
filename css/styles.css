@@ -313,7 +313,8 @@ button {
   outline: none;
 }
 
-.welcome-container {
+.welcome {
+
   background-image: url("../img/welcome-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -558,9 +559,11 @@ header.inner {
 }
 
 .newsletter-email {
+  width: 800px;
   display: grid;
   grid-template-columns: 1fr auto;
   box-sizing: border-box;
+
 }
 
 .main-inner {
@@ -646,6 +649,7 @@ header.inner {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
+
 }
 
 .welcome-logo {
@@ -653,7 +657,8 @@ header.inner {
   background-image: url("../img/welcome-logo.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 auto;
+  margin-bottom: 63px;
+
 }
 
 .advantages-additional.list,
