@@ -213,7 +213,7 @@
       </a>
     </div>
   </footer>
-  <div class="modal-container">
+  <div class="modal-container modal-container-close">
     <div class="modal modal-search-hotels">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
@@ -227,6 +227,9 @@
               <input class="field" id="date-arrival" type="text" name="date-arrival" placeholder="27 апреля 2020"
                 required>
               <span class="note note-invalid">Мы не можем отправить вас в прошлое.</span>
+              <button class="icon-calendar" type="button">
+                <span class="visually-hidden">открыть календарь</span>
+              </button>
             </div>
           </div>
           <div class="field-group group-date">
@@ -235,21 +238,36 @@
               <input class="field" id="date-depart" type="text" name="date-depart" placeholder="1 сентября 2021"
                 required>
               <span class="note note-valid">На эти даты есть свободные номера. Пока есть.</span>
+              <button class="icon-calendar" type="button">
+                <span class="visually-hidden">открыть календарь</span>
+              </button>
             </div>
           </div>
           <div class="wrapper-quest">
             <p class="field-group find-number-quest">
+              <button class="minus-quest num-quest" type="button">
+                <span class="visually-hidden">Уменьшить количество взрослых</span>
+              </button>
               <label class="form-label" for="number-quest">Взрослые:</label>
               <input class="field" id="number-quest" type="text" name="number-quest" placeholder="2" required>
+              <button class="plus-quest num-quest" type="button">
+                <span class="visually-hidden">Прибавить количество взрослых</span>
+              </button>
             </p>
             <p class="field-group find-number-child">
+              <button class="minus-child num-quest" type="button">
+                <span class="visually-hidden">Уменьшить количество детей</span>
+              </button>
               <span class=" form-label-icon">
                 <label class="form-label" for="number-child">Дети:</label>
                 <button class="info" type="button">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </span>
-              <input id="number-child" class="field" type="text" name="number-child" placeholder="1">
+              <input class="field" id="number-child" type="text" name="number-child" placeholder="1">
+              <button class="plus-child num-quest" type="button">
+                <span class="visually-hidden">Прибавить количество детей</span>
+              </button>
             </p>
           </div>
           <button class="button-search-submit" type="submit">Найти</button>
