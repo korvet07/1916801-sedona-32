@@ -180,12 +180,9 @@ button {
   line-height: 21px;
   font-weight: 700;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
-  cursor: pointer;
   padding-top: 9px;
-  padding-bottom: 10px;
-  box-sizing: border-box;
+   box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -193,8 +190,6 @@ button {
   width: 575px;
   padding-top: 13px;
   padding-bottom: 17px;
-  margin-left: auto;
-  margin-right: auto;
   color: #ffffff;
   background-color: #756257;
   font-size: 20px;
@@ -387,9 +382,8 @@ h2.advantages-title,
   font-size: 22px;
   line-height: 36px;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 79px;
-}
+  margin: 0 auto 79px auto;
+ }
 
 .advantages-list.landscape,
 .landscape .advantages-title {
@@ -457,7 +451,7 @@ h2.advantages-title,
 }
 
 .inner-header {
-  min-height: 100%;
+  height: 100%;
   color: #ffffff;
   background-image: url("../img/catalog-filter-background.jpg");
   background-size: 100% auto;
@@ -654,9 +648,17 @@ h2.advantages-title,
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 13px 55px;
+  padding: 13px 60px;
 }
-
+.navigation-list {
+  margin-right: 80px;
+}
+.nav-list {
+  padding-right: 72px;
+}
+.logo {
+  margin-right: auto;
+}
 .nav-user {
   padding-top: 0;
   width: 275px;
@@ -735,7 +737,7 @@ header.inner {
 
 .make-ordrer-container {
   background-color: #ffffff;
-  padding-top: 50px;
+  padding-top: 91px;
   padding-bottom: 91px;
 }
 
@@ -745,22 +747,15 @@ header.inner {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-}
-
-.star-wrapper {
   align-items: center;
 }
 
 .description,
 .title {
   width: 720px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .newsletter-form {
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 94px;
 }
 
@@ -798,12 +793,12 @@ header.inner {
 .navigation {
   background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
 }
 
 .page-footer-container {
   height: 120px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .catalog-container {
@@ -836,7 +831,7 @@ header.inner {
 
 .footer-social {
   width: 150px;
-  margin-left: 50px;
+  margin-left: 61px;
 }
 
 .icon {
@@ -873,7 +868,9 @@ header.inner {
   opacity: 0.3;
   outline: none;
 }
-
+.htmlacademy-link {
+  margin-right: 52px;
+}
 .htmlacademy-link:hover .footer-logo {
   fill: #756257;
 }
