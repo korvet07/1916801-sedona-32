@@ -23,11 +23,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  min-width: 1200px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #f2f2f2;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -225,7 +227,7 @@ button {
 
 .wrapper-show-more {
   background-color: #ffffff;
-  padding-top: 40px;
+  padding-top: 31px;
 }
 
 .primary-button {
@@ -297,6 +299,24 @@ button {
   text-align: center;
   border: 0;
   cursor: pointer;
+}
+
+.hotel-card::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 1056px;
+  top: 0;
+  background-color: #e6e6e6;
+}
+
+.hotel-card:last-child:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 1056px;
+  bottom: 0;
+  background-color: #e6e6e6;
 }
 
 .button[type="reset"]:hover,
@@ -437,16 +457,16 @@ h2.advantages-title,
 }
 
 .inner-header {
+  min-height: 100%;
   color: #ffffff;
   background-image: url("../img/catalog-filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding-top: 35px;
+  padding: 35px 71px 65px;
 }
 
 .inner-header-title {
   margin-top: 0;
-  margin-left: 56px;
   margin-bottom: 0;
   font-size: 60px;
   line-height: 78px;
@@ -464,6 +484,7 @@ h2.advantages-title,
   padding: 10px 33px;
   margin-top: auto;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .breadcrumbs-link-home:hover,
@@ -609,8 +630,9 @@ h2.advantages-title,
 }
 
 .hotel-card {
+  position: relative;
   display: flex;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   padding: 30px 72px;
 }
 
@@ -684,11 +706,16 @@ h2.advantages-title,
   justify-content: space-evenly;
 }
 
+header.inner {
+  min-height: 350px;
+}
+
 .catalog-filter-form {
+  height: 100%;
   display: flex;
   font-size: 18px;
   line-height: 23px;
-  padding: 0 31px 83px;
+  padding-bottom: 18px;
 }
 
 .landscape-1 {
@@ -722,7 +749,6 @@ h2.advantages-title,
 
 .star-wrapper {
   align-items: center;
-  background-color: #e5e5e5;
 }
 
 .description,
@@ -781,6 +807,7 @@ h2.advantages-title,
 }
 
 .catalog-container {
+  position: relative;
   background-color: #ffffff;
   display: flex;
   padding: 61px 72px 89px;
@@ -789,8 +816,7 @@ h2.advantages-title,
 .sorting-container {
   background-color: #ffffff;
   display: flex;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 70px;
 }
 
 .footer-social-list {
@@ -895,7 +921,6 @@ h2.advantages-title,
 
 .breadcrumbs {
   display: flex;
-  margin-left: 56px;
   margin-bottom: 45px;
   align-items: start;
 }
@@ -913,8 +938,8 @@ h2.advantages-title,
 
 .num-hotel {
   margin-left: auto;
-  margin-right: 68px;
-  align-self: flex-end;
+  margin-right: 51px;
+  align-self: center;
   line-height: 23px;
 }
 
@@ -937,20 +962,30 @@ h2.advantages-title,
   width: 625px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-radius: 4px;
 }
-
+.catalog-container::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 1056px;
+  top: 30px;
+  left: 72px;
+  background-color: #e6e6e6;
+}
 .pagination {
   display: flex;
-  margin-top: 61px;
 }
 
 .pagination-item:not(:last-child) {
   margin-right: 7px;
 }
-
+.pagination-item:last-child > .pagination-link {
+  padding: 0;
+  padding-top: 15px;
+}
 .pagination-link.primary-button,
 .pagination-current {
   display: block;
@@ -977,8 +1012,10 @@ h2.advantages-title,
 }
 
 .catalog-filter-button {
+  height: 48px;
   font-size: 16px;
   line-height: 21px;
+  margin-top: 55px;
   margin-bottom: 20px;
 }
 
@@ -1023,6 +1060,8 @@ h2.advantages-title,
   height: 48px;
   background-repeat: no-repeat;
   background-position: center;
+  outline: 2px solid #e6e6e6;
+  border-radius: 4px;
 }
 
 .button-tile:hover,
@@ -1054,6 +1093,7 @@ h2.advantages-title,
 
 .button-list {
   background-image: url("../img/card-list.svg");
+  outline: none;
 }
 
 .button-tile {
@@ -1305,6 +1345,7 @@ h2.advantages-title,
 }
 
 .select-control {
+  width: 287px;
   padding: 12px 19px;
   padding-right: 123px;
   border: 2px solid #e6e6e6;
@@ -1317,7 +1358,9 @@ h2.advantages-title,
 }
 
 .select-control[name="sorting-num"] {
-  padding-bottom: 0;
+  width: 160px;
+  padding: 13px 130px 12px 17px;
+  box-sizing: border-box;
 }
 
 .select-control:hover,
@@ -1325,6 +1368,9 @@ h2.advantages-title,
   outline: 2px solid #83b3d3;
 }
 
+.select-control:active {
+  opacity: 0, 3;
+}
 .popover {
   position: absolute;
   min-height: 200px;
@@ -1371,6 +1417,7 @@ h2.advantages-title,
   background-image: url("../img/catalog/villas-poco.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  justify-self: center;
 }
 
 .popover-item:first-child > .photo-preview {
@@ -1382,7 +1429,7 @@ h2.advantages-title,
 .popover-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 25px;
+  padding-top: 23px;
 }
 
 .popover-item {
@@ -1391,41 +1438,53 @@ h2.advantages-title,
 
 .popover-item:not(:last-child) {
   display: grid;
-  grid-template-columns: 50px 244px 20px;
+  grid-template-columns: 50px 240px 36px;
   grid-template-rows: 25px 25px;
-  column-gap: 20px;
-  margin-bottom: 25px;
+  gap: 25px 15px;
+
   padding-left: 25px;
+  padding-right: 15px;
 }
 
 .button-popover {
+  padding: 0;
   width: 100%;
   height: 60px;
+  font-size: 16px;
   line-height: 60px;
-  padding: 0;
   border-radius: 0 0 20px 20px;
 }
 
-.delete {
-  width: 16px;
+.delete-button {
+  position: relative;
   background-color: #ffffff;
-  grid-row: 1 / span 2;
-  background-image: url("../img/icon-delete.svg");
-  background-repeat: no-repeat;
-  background-position: top 7px center;
-  padding: 0;
-  margin: 0;
-  border: none;
+  grid-area: 1/3/2/4;
+}
+
+.delete-icon {
+  position: absolute;
+  left: -10px;
+  bottom: -10px;
+  width: 16px;
+  height: 16px;
+  padding: 10px;
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .popover-card-title {
+  position: relative;
+  bottom: 5px;
   font: inherit;
   font-weight: 700;
   grid-area: 1/2/2/3;
   margin: 0;
+  line-height: 40px;
+  align-items: center;
 }
 
 .card-index {
+  position: relative;
+  bottom: 40px;
   font-size: 16px;
   grid-area: 2/2/3/3;
 }
@@ -1658,4 +1717,19 @@ h2.advantages-title,
   height: 9px;
   top: 34px;
   left: 3px;
+}
+
+.delete-button:hover .delete-icon {
+  fill: #000000;
+}
+
+.delete-button:focus .delete-icon {
+  fill: #000000;
+  outline: 3px solid #83b3d3;
+  border-radius: 10px;
+}
+
+.delete-button:active .delete-icon {
+  fill: rgba(0, 0, 0, 0.2);
+  outline: none;
 }
