@@ -49,6 +49,7 @@ body {
 }
 
 a {
+  display: block;
   font-family: inherit;
   text-decoration: none;
   color: inherit;
@@ -76,6 +77,10 @@ button {
   margin: 0;
   border: 0;
   cursor: pointer;
+}
+
+button:focus {
+  outline: none;
 }
 
 .navigation-link {
@@ -319,21 +324,24 @@ button {
 }
 
 .button[type="reset"]:hover,
-.photo-hotel:hover .hotel-card-image {
+.photo-hotel:hover .hotel-card-image,
+.popover-card:hover {
   opacity: 0.6;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .button[type="reset"]:focus,
-.photo-hotel:focus .hotel-card-image {
+.photo-hotel:focus .hotel-card-image,
+.popover-card:focus {
   outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
 .button[type="reset"]:active,
-.photo-hotel:active .hotel-card-image {
+.photo-hotel:active .hotel-card-image,
+.popover-card:active {
   opacity: 0.3;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   outline: none;
 }
 
@@ -1453,13 +1461,21 @@ header.inner {
 }
 
 .popover-item:not(:last-child) {
-  display: grid;
-  grid-template-columns: 50px 240px 36px;
-  grid-template-rows: 25px 25px;
-  gap: 25px 15px;
-
+  display: flex;
   padding-left: 25px;
   padding-right: 15px;
+  margin-bottom: 5px;
+}
+
+.popover-card {
+  display: grid;
+  grid-template-columns: 50px max-content;
+  grid-template-rows: repeat(2, 25px);
+  column-gap: 17px;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .button-popover {
@@ -1471,18 +1487,15 @@ header.inner {
   line-height: 60px;
   border-radius: 0 0 20px 20px;
   text-align: center;
+  cur
 }
 
 .delete-button {
-  position: relative;
   background-color: #ffffff;
-  grid-area: 1/3/2/4;
+
 }
 
 .delete-icon {
-  position: absolute;
-  left: -10px;
-  bottom: -10px;
   width: 16px;
   height: 16px;
   padding: 10px;
@@ -1490,21 +1503,16 @@ header.inner {
 }
 
 .popover-card-title {
-  position: relative;
-  bottom: 5px;
   font: inherit;
   font-weight: 700;
-  grid-area: 1/2/2/3;
   margin: 0;
   line-height: 40px;
-  align-items: center;
+  align-self: center;
 }
 
 .card-index {
-  position: relative;
-  bottom: 40px;
   font-size: 16px;
-  grid-area: 2/2/3/3;
+  align-self: end;
 }
 
 .modal-container {
