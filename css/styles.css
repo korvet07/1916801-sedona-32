@@ -54,6 +54,11 @@ a {
   color: inherit;
 }
 
+a:active,
+a:focus {
+  outline: none;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -221,6 +226,7 @@ button {
 .wrapper-show-more {
   background-color: #ffffff;
   padding-top: 31px;
+  padding-bottom: 31px;
 }
 
 .primary-button {
@@ -313,19 +319,19 @@ button {
 }
 
 .button[type="reset"]:hover,
-.hotel-card-image:hover {
+.photo-hotel:hover .hotel-card-image {
   opacity: 0.6;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .button[type="reset"]:focus,
-.hotel-card-image:focus {
+.photo-hotel:focus .hotel-card-image {
   outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
 .button[type="reset"]:active,
-.hotel-card-image:active {
+.photo-hotel:active .hotel-card-image {
   opacity: 0.3;
   color: rgba(255, 255, 255, 0.3);
   outline: none;
@@ -389,12 +395,12 @@ h2.advantages-title,
   background-color: #83b3d3;
 }
 
-.advantages-list > .advantages-item {
+.advantages-list>.advantages-item {
   padding: 98px 75px 119px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-list > .advantages-item:nth-child(2) {
+.advantages-list>.advantages-item:nth-child(2) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -496,9 +502,9 @@ h2.advantages-title,
   outline: none;
 }
 
-.breadcrumbs-link-home:hover + .icon-breadcrumbs,
-.breadcrumbs-link-home:focus + .icon-breadcrumbs,
-.breadcrumbs-link-home:active + .icon-breadcrumbs {
+.breadcrumbs-link-home:hover+.icon-breadcrumbs,
+.breadcrumbs-link-home:focus+.icon-breadcrumbs,
+.breadcrumbs-link-home:active+.icon-breadcrumbs {
   visibility: hidden;
 }
 
@@ -576,9 +582,11 @@ h2.advantages-title,
 .newsletter-description.inner {
   color: #333333;
 }
-.select-option{
-text-align:justify;
+
+.select-option {
+  text-align: justify;
 }
+
 .newsletter-email {
   width: 800px;
   display: grid;
@@ -614,6 +622,7 @@ text-align:justify;
 }
 
 .hotel-card-title {
+  position: relative;
   color: #000000;
   font-size: 24px;
   line-height: 31px;
@@ -634,6 +643,7 @@ text-align:justify;
   display: inline-block;
   margin-right: 36px;
   object-fit: cover;
+  vertical-align: middle;
 }
 
 .card-wrapper {
@@ -650,15 +660,19 @@ text-align:justify;
   align-items: center;
   padding: 13px 60px;
 }
+
 .navigation-list {
   margin-right: 80px;
 }
+
 .nav-list {
   padding-right: 72px;
 }
+
 .logo {
   margin-right: auto;
 }
+
 .nav-user {
   padding-top: 0;
   width: 275px;
@@ -803,7 +817,7 @@ header.inner {
   position: relative;
   background-color: #ffffff;
   display: flex;
-  padding: 61px 72px 89px;
+  padding: 30px 72px 89px;
 }
 
 .sorting-container {
@@ -866,9 +880,11 @@ header.inner {
   opacity: 0.3;
   outline: none;
 }
+
 .htmlacademy-link {
   margin-right: 52px;
 }
+
 .htmlacademy-link:hover .footer-logo {
   fill: #756257;
 }
@@ -961,15 +977,17 @@ header.inner {
   padding-bottom: 15px;
   border-radius: 4px;
 }
+
 .catalog-container::after {
   content: "";
   position: absolute;
   height: 1px;
   width: 1056px;
-  top: 30px;
+  top: 0;
   left: 72px;
   background-color: #e6e6e6;
 }
+
 .pagination {
   display: flex;
 }
@@ -977,10 +995,12 @@ header.inner {
 .pagination-item:not(:last-child) {
   margin-right: 7px;
 }
-.pagination-item:last-child > .pagination-link {
+
+.pagination-item:last-child>.pagination-link {
   padding: 0;
   padding-top: 15px;
 }
+
 .pagination-link.primary-button,
 .pagination-current {
   display: block;
@@ -1096,8 +1116,9 @@ header.inner {
 }
 
 .catalog-hotel {
-  display: inline-block;
-  padding: 10px 16px;
+  position: relative;
+  left: -15px;
+  padding: 10px 15px;
 }
 
 .field:hover,
@@ -1300,27 +1321,27 @@ header.inner {
   background-color: #ffffff;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark {
+.control-input[type="checkbox"]:checked+.control-mark {
   background-image: url("../img/cheked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.control-input[type="checkbox"] + .control-mark {
+.control-input[type="checkbox"]+.control-mark {
   border-radius: 4px;
 }
 
-.control-input[type="radio"]:checked + .control-mark {
+.control-input[type="radio"]:checked+.control-mark {
   background-image: url("../img/cheked-radio.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.control-input[type="radio"] + .control-mark {
+.control-input[type="radio"]+.control-mark {
   border-radius: 50%;
 }
 
-.control-input[type="checkbox"]:focus + .control-mark {
+.control-input[type="checkbox"]:focus+.control-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1353,7 +1374,7 @@ header.inner {
 
 .select-control[name="sorting-num"] {
   width: 160px;
-  padding: 13px 130px 12px 17px;
+  padding: 13px 130px 12px 14px;
   box-sizing: border-box;
 }
 
@@ -1365,6 +1386,7 @@ header.inner {
 .select-control:active {
   opacity: 0, 3;
 }
+
 .popover {
   position: absolute;
   min-height: 200px;
@@ -1414,7 +1436,7 @@ header.inner {
   justify-self: center;
 }
 
-.popover-item:first-child > .photo-preview {
+.popover-item:first-child>.photo-preview {
   background-image: url("../img/catalog/desert-quail-inn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
