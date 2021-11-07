@@ -28,7 +28,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #f2f2f2;
+  background-color: #e5e5e5;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -66,6 +66,7 @@ img {
 }
 
 button {
+  display: block;
   padding: 0;
   margin: 0;
   border: 0;
@@ -124,7 +125,6 @@ button {
 .nav-link {
   display: block;
   width: 38px;
-  height: 38px;
   box-sizing: border-box;
 }
 
@@ -171,9 +171,7 @@ button {
 }
 
 .kind-button {
-  display: block;
   width: 160px;
-  height: 37px;
   color: #ffffff;
   background-color: #756257;
   font-size: 16px;
@@ -181,15 +179,16 @@ button {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 9px;
-   box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
   border-radius: 4px;
 }
 
 .make-order-link {
   width: 575px;
-  padding-top: 13px;
-  padding-bottom: 17px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: #ffffff;
   background-color: #756257;
   font-size: 20px;
@@ -198,7 +197,6 @@ button {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  cursor: pointer;
   border-radius: 4px;
 }
 
@@ -383,7 +381,7 @@ h2.advantages-title,
   line-height: 36px;
   text-align: center;
   margin: 0 auto 79px auto;
- }
+}
 
 .advantages-list.landscape,
 .landscape .advantages-title {
@@ -454,7 +452,7 @@ h2.advantages-title,
   height: 100%;
   color: #ffffff;
   background-image: url("../img/catalog-filter-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 71px 65px;
 }
@@ -767,11 +765,9 @@ header.inner {
   line-height: 26px;
   font-weight: 700;
   width: 200px;
-  height: 60px;
   text-align: center;
   text-transform: uppercase;
-  cursor: pointer;
-  border: 0;
+  padding: 5px 10px;
   border-radius: 0 10px 10px 0;
 }
 
@@ -1156,11 +1152,10 @@ header.inner {
   line-height: 26px;
   display: block;
   background-color: #f2f2f2;
-  box-sizing: border-box;
-  width: 600px;
+  width: 556px;
   border-radius: 10px 0 0 10px;
   border: none;
-  padding: 15px 22px;
+  padding: 17px 22px;
 }
 
 .range-scale {
