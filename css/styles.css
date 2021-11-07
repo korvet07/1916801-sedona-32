@@ -576,7 +576,9 @@ h2.advantages-title,
 .newsletter-description.inner {
   color: #333333;
 }
-
+.select-option{
+text-align:justify;
+}
 .newsletter-email {
   width: 800px;
   display: grid;
@@ -1339,7 +1341,7 @@ header.inner {
 .select-control {
   width: 287px;
   padding: 12px 19px;
-  padding-right: 123px;
+  padding-right: 100px;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
   background-image: url("../img/select-arrow.svg");
