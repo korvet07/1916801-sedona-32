@@ -1157,10 +1157,10 @@ header.inner {
   outline: none;
 }
 
-/* .field:invalid {
+.field:invalid {
   background-color: #ffffff;
   outline: 2px solid #ff5757;
-} */
+}
 
 .field::placeholder {
   color: rgba(0, 0, 0, 0.6);
