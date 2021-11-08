@@ -303,6 +303,7 @@ button:focus {
   text-align: center;
   border: 0;
   cursor: pointer;
+  flex-grow: 1;
 }
 
 .hotel-card::before {
@@ -1035,11 +1036,13 @@ header.inner {
 }
 
 .catalog-filter-button {
-  height: 48px;
+ box-sizing: content-box;
   font-size: 16px;
   line-height: 21px;
   margin-top: 55px;
   margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .default-button.catalog-filter-button:hover,
@@ -1301,7 +1304,7 @@ header.inner {
 
 .filter-price {
   width: 287px;
-  margin-right: auto;
+  margin-right: 80px;
 }
 
 .infrastructure-hotels {
@@ -1376,7 +1379,7 @@ header.inner {
 
 .select-control[name="sorting-num"] {
   width: 160px;
-  padding: 13px 130px 12px 14px;
+  padding: 11px 130px 11px 14px;
   box-sizing: border-box;
 }
 
