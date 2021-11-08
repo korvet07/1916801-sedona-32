@@ -1535,9 +1535,10 @@ header.inner {
 }
 
 .modal-search-hotels {
-  max-width: 715px;
+  width: 715px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+  box-sizing: border-box;
 }
 
 .modal-close-button {
@@ -1557,7 +1558,7 @@ header.inner {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 54px;
   color: #000000;
   font-size: 30px;
   line-height: 40px;
@@ -1572,8 +1573,7 @@ header.inner {
 .note {
   display: inline-block;
   font-size: 16px;
-  margin-bottom: 11px;
-}
+ }
 
 .note-invalid {
   color: #ff5757;
@@ -1584,6 +1584,7 @@ header.inner {
   height: 50px;
   padding: 10px 250px 10px 19px;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .button-search-submit {
@@ -1593,7 +1594,7 @@ header.inner {
   line-height: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 0;
+  padding: 10px 0 10px 0;
   margin: 0;
   border: 0;
   background: #83b3d3;
@@ -1609,6 +1610,7 @@ header.inner {
   width: 133px;
   padding: 3px 49px;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .find-number-quest {
@@ -1643,6 +1645,8 @@ header.inner {
   height: 50px;
 }
 
+/* закрытие модального окна */
+
 .modal-container-close {
   display: none;
 }
@@ -1666,7 +1670,7 @@ header.inner {
 .minus-quest {
   position: absolute;
   display: block;
-  left: 110px;
+  left: 105px;
   top: 12px;
   width: 25px;
   height: 25px;
@@ -1716,6 +1720,8 @@ header.inner {
   background-position: center;
   border-radius: 50%;
 }
+
+/* Tooltip */
 
 .info::after {
   content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
