@@ -355,8 +355,6 @@ button:focus {
 .advantages {
   padding-top: 63px;
   background-color: #ffffff;
-  box-shadow: 15px 0px 10px -3px rgba(0, 0, 0, 0.2),
-    -15px 0px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 h2.advantages-title,
@@ -471,7 +469,7 @@ h2.advantages-title,
   background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 71px 65px;
-  }
+}
 
 .inner-header-title {
   margin-top: 0;
@@ -707,8 +705,6 @@ h2.advantages-title,
   background-image: url("../img/welcome-logo.svg");
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 15px 0px 10px -3px rgba(0, 0, 0, 0.2),
-    -15px 0px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .advantages-additional.list,
@@ -784,9 +780,13 @@ header.inner {
 .catalog-container,
 .wrapper-show-more,
 .sorting-container,
-.inner-header {
-  box-shadow: 15px 0px 10px -5px rgba(0, 0, 0, 0.2),
-    -15px 0px 10px -5px rgba(0, 0, 0, 0.2);
+.inner-header,
+.advantages,
+.welcome-logo,
+.navigation,
+.page-footer-container {
+  box-shadow: 15px 0px 20px -10px rgba(0, 0, 0, 0.2),
+    -15px 0px 20px -10px rgba(0, 0, 0, 0.2);
 }
 
 .description,
@@ -829,8 +829,6 @@ header.inner {
 .navigation {
   background-color: #ffffff;
   display: flex;
-  box-shadow: 15px 0px 10px -3px rgba(0, 0, 0, 0.2),
-    -15px 0px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .page-footer-container {
