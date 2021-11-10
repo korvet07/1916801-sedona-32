@@ -64,7 +64,9 @@ img {
 }
 
 .delete-button,
-.newsletter-button {
+.newsletter-button,
+.info,
+.num-quest {
   display: block;
   padding: 0;
   margin: 0;
@@ -413,6 +415,7 @@ h2.advantages-title,
 }
 
 .advantages-list>.advantages-item {
+  min-height: 384px;
   min-width: 400px;
   padding: 98px 75px 75px 75px;
   box-sizing: border-box;
@@ -714,8 +717,6 @@ h2.advantages-title,
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .welcome-logo {
@@ -732,10 +733,15 @@ h2.advantages-title,
 }
 
 .advantages-additional.item {
+  min-height: 384px;
+  min-width: 400px ;
   padding-bottom: 44px;
   background-color: rgba(131, 179, 211, 0.12);
+  box-sizing: border-box;
 }
-
+.make-order-title{
+  margin-bottom: 15px;
+}
 .advantages-additional.item:nth-child(2) {
   background-color: #ffffff;
 }
