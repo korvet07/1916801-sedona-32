@@ -423,8 +423,10 @@ h2.advantages-title,
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-description {
+.advantages-description-2 {
   margin-bottom: 0;
+  padding: 0 90px 77px 90px;
+  text-align: center;
 }
 
 .advantages-description,
