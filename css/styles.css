@@ -60,7 +60,7 @@ body {
 
 img {
   max-width: 100%;
-   object-fit: cover;
+  object-fit: cover;
 }
 
 .delete-button,
@@ -731,11 +731,6 @@ h2.advantages-title,
   justify-content: space-between;
 }
 
-.advantages-additional.item,
-.advantages-item {
-  min-width: 400px;
-}
-
 .advantages-additional.item {
   padding-bottom: 44px;
   background-color: rgba(131, 179, 211, 0.12);
@@ -803,8 +798,8 @@ header.inner {
 .welcome-logo,
 .navigation,
 .page-footer-container {
-  box-shadow: 15px 0px 20px -10px rgba(0, 0, 0, 0.2),
-    -15px 0px 20px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 0px 10px -15px rgba(0, 0, 0, 0.2),
+    -15px 0px 10px -15px rgba(0, 0, 0, 0.2);
 }
 
 .description,
@@ -850,7 +845,7 @@ header.inner {
 }
 
 .page-footer-container {
-  height: 120px;
+  min-height: 120px;
   align-items: center;
   justify-content: space-between;
 }
