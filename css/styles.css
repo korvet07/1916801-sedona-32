@@ -29,7 +29,7 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #e5e5e5;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -355,6 +355,8 @@ button:focus {
 .advantages {
   padding-top: 63px;
   background-color: #ffffff;
+  box-shadow: 15px 0px 10px -3px rgba(0, 0, 0, 0.2),
+    -15px 0px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 h2.advantages-title,
@@ -469,8 +471,7 @@ h2.advantages-title,
   background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 71px 65px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
+  }
 
 .inner-header-title {
   margin-top: 0;
@@ -622,9 +623,11 @@ h2.advantages-title,
   font-size: 18px;
   line-height: 23px;
 }
-.hotel-card-price{
-  grid-area:2/2/3/3 ;
+
+.hotel-card-price {
+  grid-area: 2/2/3/3;
 }
+
 .hotel-index {
   grid-area: 2/1/3/2;
 }
@@ -704,6 +707,8 @@ h2.advantages-title,
   background-image: url("../img/welcome-logo.svg");
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow: 15px 0px 10px -3px rgba(0, 0, 0, 0.2),
+    -15px 0px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .advantages-additional.list,
@@ -773,6 +778,17 @@ header.inner {
   align-items: center;
 }
 
+.make-ordrer-container,
+.newsletter-container,
+.hotel-list,
+.catalog-container,
+.wrapper-show-more,
+.sorting-container,
+.inner-header {
+  box-shadow: 15px 0px 10px -5px rgba(0, 0, 0, 0.2),
+    -15px 0px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
 .description,
 .title {
   width: 720px;
@@ -813,6 +829,8 @@ header.inner {
 .navigation {
   background-color: #ffffff;
   display: flex;
+  box-shadow: 15px 0px 10px -3px rgba(0, 0, 0, 0.2),
+    -15px 0px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .page-footer-container {
