@@ -51,7 +51,8 @@ body {
 .kind-button,
 .button-popover,
 .footer-contact-tel,
-.catalog-hotel {
+.catalog-hotel,
+.breadcrumbs-link {
   display: block;
   font: inherit;
   text-decoration: none;
@@ -734,14 +735,16 @@ h2.advantages-title,
 
 .advantages-additional.item {
   min-height: 384px;
-  min-width: 400px ;
+  min-width: 400px;
   padding-bottom: 44px;
   background-color: rgba(131, 179, 211, 0.12);
   box-sizing: border-box;
 }
-.make-order-title{
+
+.make-order-title {
   margin-bottom: 15px;
 }
+
 .advantages-additional.item:nth-child(2) {
   background-color: #ffffff;
 }
