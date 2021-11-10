@@ -48,30 +48,24 @@ body {
   height: 48px;
 }
 
-a {
+.kind-button,
+.button-popover,
+.footer-contact-tel,
+.catalog-hotel {
   display: block;
-  font-family: inherit;
+  font: inherit;
   text-decoration: none;
   color: inherit;
-}
-
-a:active,
-a:focus {
-  outline: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
-button {
+.delete-button,
+.newsletter-button {
   display: block;
   padding: 0;
   margin: 0;
@@ -93,6 +87,22 @@ button:focus {
   text-decoration: none;
   text-transform: capitalize;
   padding: 6px 12px;
+}
+
+.advantages-list,
+.advantages-additional.list,
+.footer-social-list,
+.nav-list,
+.navigation-list,
+.breadcrumbs,
+.catalog-filter-list,
+.hotel-list,
+.star-list,
+.pagination,
+.popover-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .nav-item:not(:last-child) {
@@ -404,7 +414,9 @@ h2.advantages-title,
 }
 
 .advantages-list>.advantages-item {
-  padding: 98px 75px 119px;
+  min-width: 400px;
+  padding: 98px 75px 75px 75px;
+  box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -420,6 +432,11 @@ h2.advantages-title,
 .advantages-additional-description {
   text-align: center;
   margin: 0;
+}
+
+.text-align {
+  margin: 0;
+  font: inherit;
 }
 
 .icon-hous {
@@ -715,11 +732,11 @@ h2.advantages-title,
 
 .advantages-additional.item,
 .advantages-item {
-  width: 400px;
+  min-width: 400px;
 }
 
 .advantages-additional.item {
-  padding-bottom: 80px;
+  padding-bottom: 44px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -1205,6 +1222,8 @@ header.inner {
   position: absolute;
   height: 4px;
   background-color: #ffffff;
+  width: 227px;
+  left: 0;
 }
 
 .range-toggle {
