@@ -381,7 +381,7 @@ h2.advantages-title,
   margin-bottom: 23px;
 }
 
-.wrapper>.advantages-title {
+.wrapper > .advantages-title {
   margin: 98px auto 25px auto;
 }
 
@@ -393,7 +393,6 @@ h2.advantages-title,
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .advantages-num {
@@ -416,7 +415,7 @@ h2.advantages-title,
   background-color: #83b3d3;
 }
 
-.advantages-list>.advantages-item {
+.advantages-list > .advantages-item {
   min-height: 384px;
   min-width: 400px;
   padding: 98px 70px 70px 70px;
@@ -424,7 +423,7 @@ h2.advantages-title,
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-list>.advantages-item:nth-child(2) {
+.advantages-list > .advantages-item:nth-child(2) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -460,9 +459,11 @@ h2.advantages-title,
   margin-top: 91px;
   margin-bottom: 23px;
 }
-.nav-link.kind-button{
+
+.nav-link.kind-button {
   margin-bottom: 10px;
 }
+
 .icon-souvenir {
   width: 64px;
   height: 76px;
@@ -529,9 +530,9 @@ h2.advantages-title,
   outline: none;
 }
 
-.breadcrumbs-link-home:hover+.icon-breadcrumbs,
-.breadcrumbs-link-home:focus+.icon-breadcrumbs,
-.breadcrumbs-link-home:active+.icon-breadcrumbs {
+.breadcrumbs-link-home:hover + .icon-breadcrumbs,
+.breadcrumbs-link-home:focus + .icon-breadcrumbs,
+.breadcrumbs-link-home:active + .icon-breadcrumbs {
   visibility: hidden;
 }
 
@@ -736,7 +737,7 @@ h2.advantages-title,
   padding-bottom: 44px;
   background-color: rgba(131, 179, 211, 0.12);
   box-sizing: border-box;
- }
+}
 
 .make-order-title {
   margin-bottom: 15px;
@@ -813,8 +814,8 @@ header.inner {
 .welcome-logo,
 .navigation,
 .page-footer-container {
-  box-shadow: 15px 0px 10px -15px rgba(0, 0, 0, 0.2),
-    -15px 0px 10px -15px rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 0 10px -15px rgba(0, 0, 0, 0.2),
+    -15px 0 10px -15px rgba(0, 0, 0, 0.2);
 }
 
 .description,
@@ -1048,7 +1049,7 @@ header.inner {
   margin-right: 7px;
 }
 
-.pagination-item:last-child>.pagination-link {
+.pagination-item:last-child > .pagination-link {
   padding: 0;
   padding-top: 15px;
 }
@@ -1365,27 +1366,27 @@ header.inner {
   background-color: #ffffff;
 }
 
-.control-input[type="checkbox"]:checked+.control-mark {
+.control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../img/cheked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.control-input[type="checkbox"]+.control-mark {
+.control-input[type="checkbox"] + .control-mark {
   border-radius: 4px;
 }
 
-.control-input[type="radio"]:checked+.control-mark {
+.control-input[type="radio"]:checked + .control-mark {
   background-image: url("../img/cheked-radio.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.control-input[type="radio"]+.control-mark {
+.control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
 
-.control-input[type="checkbox"]:focus+.control-mark {
+.control-input[type="checkbox"]:focus + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1480,7 +1481,7 @@ header.inner {
   justify-self: center;
 }
 
-.popover-item:first-child>.photo-preview {
+.popover-item:first-child > .photo-preview {
   background-image: url("../img/catalog/desert-quail-inn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
