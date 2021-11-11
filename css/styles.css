@@ -241,9 +241,10 @@ button:focus {
 }
 
 .wrapper-show-more {
+  width: 1200px;
   background-color: #ffffff;
   padding-top: 31px;
-  padding-bottom: 31px;
+  padding-bottom: 15px;
 }
 
 .primary-button {
@@ -380,8 +381,8 @@ h2.advantages-title,
   margin-bottom: 23px;
 }
 
-.advantages-title {
-  margin-top: 0;
+.wrapper>.advantages-title {
+  margin: 98px auto 25px auto;
 }
 
 .advantages-title,
@@ -392,7 +393,7 @@ h2.advantages-title,
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 0;
+
 }
 
 .advantages-num {
@@ -418,7 +419,7 @@ h2.advantages-title,
 .advantages-list>.advantages-item {
   min-height: 384px;
   min-width: 400px;
-  padding: 98px 75px 75px 75px;
+  padding: 98px 70px 70px 70px;
   box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -427,21 +428,15 @@ h2.advantages-title,
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-description-2 {
-  margin-bottom: 0;
-  padding: 0 90px 77px 90px;
-  text-align: center;
-}
-
+.advantages-description-2,
 .advantages-description,
 .advantages-additional-description {
   text-align: center;
   margin: 0;
 }
 
-.text-align {
-  margin: 0;
-  font: inherit;
+.advantages-description {
+  padding: 0 5px 5px 5px;
 }
 
 .icon-hous {
@@ -730,7 +725,7 @@ h2.advantages-title,
 .advantages-additional.list,
 .advantages-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .advantages-additional.item {
@@ -739,7 +734,7 @@ h2.advantages-title,
   padding-bottom: 44px;
   background-color: rgba(131, 179, 211, 0.12);
   box-sizing: border-box;
-}
+ }
 
 .make-order-title {
   margin-bottom: 15px;
@@ -751,7 +746,7 @@ h2.advantages-title,
 
 .advantages-list.landscape {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 header.inner {
@@ -761,24 +756,33 @@ header.inner {
 .catalog-filter-form {
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   font-size: 18px;
   line-height: 23px;
   padding-bottom: 18px;
 }
 
+.landscape-2,
 .landscape-1 {
-  margin-left: auto;
+  min-height: 100%;
   vertical-align: middle;
 }
 
-.landscape-2 {
-  margin-right: auto;
-  vertical-align: middle;
+.advantages-description-2 {
+  padding: 0 90px 77px 90px;
+}
+
+.landscape-additional {
+  margin: 0 auto;
+}
+
+.paragraf-wrapper {
+  margin: 0;
 }
 
 .wrapper {
-  padding-top: 98px;
-  width: 400px;
+  min-width: 400px;
+  margin: 0 auto;
 }
 
 .make-ordrer-container {
@@ -869,6 +873,7 @@ header.inner {
 .sorting-container {
   background-color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   padding: 50px 70px;
 }
 
@@ -989,8 +994,8 @@ header.inner {
 }
 
 .filter-housing {
-  width: 145px;
-  margin-right: 167px;
+  min-width: 145px;
+  margin-right: auto;
 }
 
 .num-hotel {
@@ -1017,8 +1022,7 @@ header.inner {
 .button.pagination-show-more.primary-button {
   display: block;
   width: 625px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 15px auto;
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 4px;
@@ -1052,8 +1056,8 @@ header.inner {
   display: block;
   box-sizing: border-box;
   padding: 15px 20px;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   border-radius: 4px;
 }
 
