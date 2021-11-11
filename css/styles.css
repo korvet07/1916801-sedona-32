@@ -460,7 +460,9 @@ h2.advantages-title,
   margin-top: 91px;
   margin-bottom: 23px;
 }
-
+.nav-link.kind-button{
+  margin-bottom: 10px;
+}
 .icon-souvenir {
   width: 64px;
   height: 76px;
