@@ -117,7 +117,7 @@ button:focus {
 
 .link-current::after {
   position: absolute;
-  bottom: -23px;
+  bottom: -25px;
   left: 10px;
   right: 10px;
   height: 2px;
@@ -477,6 +477,7 @@ h2.advantages-title,
 
 .index-newsletter {
   background-image: url("../img/background-newsletter.jpg");
+  background-color: #5e5959;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 94px;
@@ -486,6 +487,7 @@ h2.advantages-title,
   height: 100%;
   color: #ffffff;
   background-image: url("../img/catalog-filter-background.jpg");
+  background-color: #5e5959;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 71px 50px;
@@ -797,7 +799,6 @@ header.inner {
 .make-ordrer-container,
 .newsletter-container,
 .star-wrapper {
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
