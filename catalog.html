@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="nav-header">
     <div class="container">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -25,8 +25,8 @@
             <a class="navigation-link link-current" href="#" tabindex="1">Гостиницы</a>
           </li>
         </ul>
-        <a class="logo" href="https://htmlacademy.ru/" tabindex="1"> <img class="logo" src="img/logo.svg" width="138"
-            height="70" alt="Герб Седоны" /></a>
+        <a class="logo-link" href="https://htmlacademy.ru/" tabindex="1"> <img class="logo" src="img/logo.svg"
+            width="138" height="70" alt="Герб Седоны" /></a>
         <ul class="nav-list nav-user">
           <li class="nav-item search">
             <a class="nav-link" href="#" aria-label="Поиск" tabindex="1">
@@ -39,14 +39,12 @@
           </li>
           <li class="nav-item favorite">
             <a class="nav-link" href="#" aria-label="Избранное" tabindex="1">
-              <svg class="nav-link-icon" aria-hidden="true" focusable="false" width="31" height="27"
+              <svg class="nav-link-icon" aria-hidden="true" focusable="false" width="18" height="17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M8.9 27a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 10c1.3 0 2.5.5 3.5 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
-                <path d="M31 9.5a9.5 9.5 0 1 1-19 0 9.5 9.5 0 0 1 19 0Z" fill="#7DB54F" />
-                <path
-                  d="M17.63 12.26h1.4V7.42l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37V13h-3.55v-.74Zm7.83-4.67c0 .35-.07.72-.2 1.09a10.88 10.88 0 0 1-1.21 2.21c-.26.35-.52.69-.78 1.01l-.49.43v.04l.64-.11h2.18V13h-3.98v-.29a33.15 33.15 0 0 0 1.17-1.32 15.09 15.09 0 0 0 1.25-1.83c.18-.32.32-.64.43-.95.1-.31.16-.61.16-.89 0-.33-.1-.6-.28-.81-.19-.22-.47-.33-.85-.33-.25 0-.5.05-.74.16-.24.1-.45.22-.62.35l-.33-.57c.23-.2.51-.36.83-.47.32-.11.66-.17 1.03-.17.29 0 .54.04.76.13a1.5 1.5 0 0 1 .91.9c.08.2.12.43.12.68Z" />
+                  d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
               </svg>
+              <span class="value-favorite" aria-label="количество избранных отелей">12</span>
             </a>
             <!-- Поповер открытие: popover-open
                          закрытие: popover-close-button -->
@@ -60,8 +58,9 @@
                       <h3 class="popover-card-title">Desert Quail Inn</h3>
                       <span class="card-index">Мотель</span>
                     </div>
-                    <button class="delete-button" aria-label="удалить из избранного"><svg class="delete-icon"
-                        aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <button class="delete-button" type="button" aria-label="удалить из избранного"><svg
+                        class="delete-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" />
                         <path
@@ -75,8 +74,9 @@
                       <h3 class="popover-card-title">Villas at Poco Diablo</h3>
                       <span class="card-index">Апартаменты</span>
                     </div>
-                    <button class="delete-button" aria-label="удалить из избранного"><svg class="delete-icon"
-                        aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <button class="delete-button" type="button" aria-label="удалить из избранного"><svg
+                        class="delete-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" />
                         <path
@@ -102,15 +102,14 @@
     <header class="inner">
       <div class="container">
         <div class="inner-header">
-          <h1 class="inner-header-title">Гостинницы Седоны</h1>
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link-home" href="index.html" aria-label="Главная" tabindex="1"></a>
-              <span class="icon-breadcrumbs"></span>
             </li>
-            <li class="breadcrumbs-item-icon"></li>
+            <li class="breadcrumbs-item-icon"><span class="icon-breadcrumbs"></span></li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#" tabindex="1">Гостинницы</a>
+              <a class="breadcrumbs-link" href="#" tabindex="1">Гостиницы</a>
             </li>
           </ul>
           <section class="catalog-filter">
@@ -137,7 +136,7 @@
                     <label class="control control-chekbox"><input class="visually-hidden control-input" type="checkbox"
                         name="wi-fi" />
                       <span class="control-mark"></span>
-                      <span class="control-label">Wi-fi</span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -412,7 +411,7 @@
             </li>
           </ul>
         </section>
-        <a class="footer-contact-tel" href="tel:+7(812)812-12-12" tabindex="1">+7 (812)812-12-12</a>
+        <a class="footer-contact-tel" href="tel:+7(812)812-12-12" tabindex="1">+7 (812) 812-12-12</a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/" aria-label="Логотип HtmlAcademy" tabindex="1">
           <svg class="footer-logo" aria-hidden="true" focusable="false" width="115" height="33" fill="none"
             xmlns="http://www.w3.org/2000/svg">
