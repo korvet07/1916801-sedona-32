@@ -563,7 +563,7 @@ h2.advantages-title,
   width: 25px;
   height: 27px;
   background-image: url("/img/icon-breadcrumbs-home.svg");
-  background-position: center;
+  background-position: top 9px center;
   background-size: 12px 12px;
   background-repeat: no-repeat;
 }
@@ -571,7 +571,6 @@ h2.advantages-title,
 .breadcrumbs-link {
   color: #ffffff;
   display: inline-block;
-  padding: 2px 8px;
 }
 
 .icon-breadcrumbs {
