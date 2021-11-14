@@ -106,8 +106,8 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link-home" href="index.html" aria-label="Главная" tabindex="1"></a>
+              <span class="icon-breadcrumbs"></span>
             </li>
-            <li class="breadcrumbs-item-icon"><span class="icon-breadcrumbs"></span></li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#" tabindex="1">Гостиницы</a>
             </li>
@@ -116,7 +116,7 @@
             <h2 class="visually-hidden">Каталог гостиниц</h2>
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group infrastructure-hotels">
-                <legend class="catalog-filter-title">Инфраструктура</legend>
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control control-chekbox"><input class="visually-hidden control-input" type="checkbox"
@@ -142,7 +142,7 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group filter-housing">
-                <legend class="catalog-filter-title">Тип жилья</legend>
+                <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control"><input class="visually-hidden control-input" type="radio" name="type-home"
@@ -171,10 +171,10 @@
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="range">
                   <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label value-min"><input class="range-input" type="number"
+                    <label class="catalog-filter-label value-min" tabindex="1"><input class="range-input" type="number"
                         name="min-price" placeholder="0" min="0" />от
                     </label>
-                    <label class="catalog-filter-label value-max"><input class="range-input" type="number"
+                    <label class="catalog-filter-label value-max" tabindex="1"><input class="range-input" type="number"
                         name="max-price" placeholder="9000" max="9000" />до
                     </label>
                   </div>
