@@ -242,7 +242,8 @@ button:focus {
 .make-order-link:focus,
 .kind-button:focus {
   background-color: #615048;
-  outline: 3px solid #83b3d3;
+  border: 3px solid #83b3d3;
+  outline: none;
 }
 
 .make-order-link:active,
@@ -351,7 +352,7 @@ button:focus {
 .photo-hotel:hover .hotel-card-image,
 .popover-card:hover {
   opacity: 0.6;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .button[type="reset"]:focus,
@@ -365,7 +366,7 @@ button:focus {
 .photo-hotel:active .hotel-card-image,
 .popover-card:active {
   opacity: 0.3;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
@@ -898,6 +899,7 @@ header.inner {
   text-align: center;
   text-transform: uppercase;
   border-radius: 0 10px 10px 0;
+  box-sizing: border-box;
 }
 
 .newsletter-button:hover {
@@ -906,7 +908,7 @@ header.inner {
 
 .newsletter-button:focus {
   background-color: #68a2ca;
-  outline: 3px solid #756257;
+  border: 3px solid #756257;
 }
 
 .newsletter-button:active {
