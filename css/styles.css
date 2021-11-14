@@ -570,6 +570,7 @@ h2.advantages-title,
 .breadcrumbs-link {
   color: #ffffff;
   display: inline-block;
+  padding: 2px 8px;
 }
 
 .icon-breadcrumbs {
