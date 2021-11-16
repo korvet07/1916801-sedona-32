@@ -872,7 +872,7 @@ header.inner {
 
 .description,
 .title {
-  width: 720px;
+  max-width: 720px;
 }
 
 .newsletter-container .newsletter-form {
