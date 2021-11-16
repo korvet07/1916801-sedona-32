@@ -435,8 +435,7 @@ h2.advantages-title,
 
 .advantages-list > .advantages-item {
   min-height: 384px;
-  min-width: 400px;
-  max-width: 600px;
+  width: 400px;
   padding: 98px 70px 70px 70px;
   box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.12);
@@ -781,15 +780,15 @@ h2.advantages-title,
 }
 
 .advantages-additional.list .advantages-additional-description,
-.advantages-additional.list .additional-title {
+.advantages-additional.list .additional-title,
+.advantages-title {
   padding-left: 50px;
   padding-right: 50px;
 }
 
 .advantages-additional.item {
   min-height: 384px;
-  min-width: 400px;
-  max-width: 600px;
+  width: 400px;
   padding-bottom: 44px;
   background-color: rgba(131, 179, 211, 0.12);
   box-sizing: border-box;
@@ -805,7 +804,6 @@ h2.advantages-title,
 
 .advantages-list.landscape {
   display: flex;
-  flex-wrap: wrap;
 }
 
 header.inner {
@@ -822,8 +820,9 @@ header.inner {
 
 .landscape-2,
 .landscape-1 {
-  min-height: 100%;
+  height: 100%;
   vertical-align: middle;
+  object-fit: cover;
 }
 
 .advantages-description-2 {
@@ -835,9 +834,7 @@ header.inner {
 }
 
 .wrapper {
-  min-width: 400px;
-  max-width: 600px;
-  margin: 0 auto;
+  width: 400px;
 }
 
 .make-ordrer-container {
@@ -932,6 +929,7 @@ header.inner {
   position: relative;
   background-color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   padding: 30px 72px 87px;
 }
 
