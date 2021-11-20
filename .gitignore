@@ -9,3 +9,10 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+app/index.js
+app/calc.js
+.vs/1916801-sedona-32/v17/.suo
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/1916801-sedona-32/project-colors.json
+.vs/1916801-sedona-32/config/applicationhost.config
