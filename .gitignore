@@ -16,3 +16,4 @@ app/calc.js
 .vs/VSWorkspaceState.json
 .vs/1916801-sedona-32/project-colors.json
 .vs/1916801-sedona-32/config/applicationhost.config
+build/
