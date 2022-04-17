@@ -1,37 +1,17 @@
-// index.js
-const openFavorite = document.querySelector('.favorite > .nav-link');
-openFavorite.onclick = function () {
-  const popoverFavorite = document.querySelector('.popover');
+const controllerFavoriteButton = document.querySelector('.favorite > .nav-link');
+const successMessage = document.querySelector('.newsletter-success');
+const formNewsletter = document.querySelector('.newsletter-form');
+const inputNewsletter = document.querySelector('#newsletter-email');
+controllerFavoriteButton.onclick = () => {
+  const popoverFavorite = document.querySelector('.popover-favorite');
   popoverFavorite.classList.toggle('popover-close-button');
 };
-const modalSerch = document.querySelector('.modal-container');
-const openSearch = document.querySelector('.make-order-link');
-openSearch.onclick = function () {
-  modalSerch.classList.remove('modal-container-close');
+formNewsletter.onsubmit = (evt) => {
+  evt.preventDefault();
+  successMessage.style.display = 'block';
+  successMessage.textContent = `E-mail ${inputNewsletter.value} добавлен в рассылку`;
+  setTimeout(() => {
+    successMessage.style.display = 'none';
+  }, 3000);
 };
-const closeSearch = document.querySelector('.modal-close-button');
-closeSearch.onclick = function () {
-  modalSerch.classList.add('modal-container-close');
-};
-const formNewsletter = document.querySelector('.newsletter-form');
-formNewsletter.onsubmit = function () {
-  const input = document.querySelector('.field');
-  alert(`Адрес ${  input.value  } добавлен в рассылку`);
-};
-const favorite = document.querySelector('.hotel-card-button');
-const valueFavorite = document.querySelector('.value-favorite');
-valueFavorite.textContent = 18;
-function myFunc() {
-  if (favorite.classList.contains('added-button')) {
-    valueFavorite.textContent--;
-    favorite.classList.remove('added-button');
-    favorite.classList.add('primary-button');
-    favorite.textContent = 'В избранное';
-  } else {
-    valueFavorite.textContent++;
-    favorite.classList.add('added-button');
-    favorite.classList.remove('primary-button');
-    favorite.textContent = 'В избранном';
-  }
-}
-favorite.addEventListener('click', myFunc);
+

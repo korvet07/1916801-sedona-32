@@ -28,12 +28,12 @@ const html = () => gulp
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
 
-// Scripts
+// Scripts .pipe(terser())
 
 const scripts = () => gulp
-  .src('js/script.js')
-  .pipe(terser())
-  .pipe(gulp.dest('build/js/script.js'))
+  .src('js/*.js')
+
+  .pipe(gulp.dest('build/js'))
   .pipe(browser.stream());
 
 // Images
@@ -64,7 +64,8 @@ const svg = () =>
 // Copy
 
 const copy = (done) => {
-  gulp.src('fonts/*.{woff2,woff}').pipe(gulp.dest('build'));
+  gulp.src('fonts/*.{woff2,woff}').pipe(gulp.dest('build/fonts'));
+  gulp.src('favicon.ico').pipe(gulp.dest('build'));
   done();
 };
 
@@ -96,8 +97,8 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('css/**/*.sss', gulp.series(styles)).on('change', browser.reload);
-  gulp.watch('js/**/*.js', gulp.series(scripts)).on('change', browser.reload);
+  gulp.watch('css/*.css', gulp.series(styles)).on('change', browser.reload);
+  gulp.watch('js/*.js', gulp.series(scripts)).on('change', browser.reload);
   gulp.watch('*.html', gulp.series(html)).on('change', browser.reload);
 };
 
