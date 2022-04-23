@@ -61,6 +61,8 @@
   },
   "homepage": "https://github.com/korvet07/1916801-sedona-32#readme",
   "dependencies": {
-    "async": "^2.6.4"
+    "async": "^2.6.4",
+    "deep-extend": "^0.5.1",
+    "glob-parent": "^5.1.2"
   }
 }
